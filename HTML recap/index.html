@@ -33,7 +33,7 @@
       </nav>
     </header>
 
-<div class="main">
+<section class="main">
 
     <div class="title" id="Tigers">Tigers</div>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ullam quas sapiente asperiores, dignissimos facere repudiandae, possimus veritatis, aliquid vel perferendis placeat ipsum! Alias maxime sint odio fugiat est doloremque!
@@ -84,7 +84,54 @@
     Nisi, voluptates. Ab laboriosam aperiam cumque quasi, eos explicabo sunt aliquid quas ducimus odio incidunt nisi, quis dolorum repellat maiores excepturi eum eius illo voluptatem impedit totam a atque ullam!
     Labore obcaecati ipsum maiores impedit totam, provident nisi libero sequi illo, debitis voluptatum ea dolores fugit laudantium eligendi hic magnam vel corporis placeat, reiciendis sunt? Corrupti dignissimos est laudantium minus.</p>
 
+</section>
+
+
+<section class="form-section">
+
+  <div class="form-content">
+
+<div class="form-container">
+    <fieldset class="form-title"><legend>Persoons gegevens</legend>
+    <form class="form" action="">
+      <div class="form-item">
+      <label for='achternaam'>Achternaam:</label>
+      <input type="text" name='achternaam' id="achternaam" placeholder="Achternaam" required>
+    </div>
+      <div class="form-item">
+      <label for='voornaam'>Voornaam:</label>
+      <input type="text" name='voornaam' id="voornaam" placeholder="Voornaam" required>
+    </div>
+      <div class="form-item">
+        <label for="Geboortedatum">Geboortedatum:</label>
+        <input type="date" id="Geboortedatum" name="Geboortedatum" required>
+    </div>
+      <div class="form-item-radio">
+        <label for="man">M: </label>
+        <input type="radio" id="man" name="geslacht">
+        <label for="vrouw">V: </label>
+        <input type="radio" id="vrouw" name="geslacht">
+    </div>
+    <div class="form-item">
+      <label for="Postcode">Postcode:</label>
+      <input type="text" required pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" id="postcode" name="postcode" placeholder="1234 AA" required>
+  </div>
+    <div class="form-item">
+      <label for="Adres">Adres:</label>
+      <input type="text"  id="postcode" name="postcode" placeholder="Adres" required>
+  </div>
+
+</fieldset>
+<button class="btn-form"input type="submit" value="Submit">Submit</button>
+ <button class="btn-form" input type="reset" value="Reset">Reset</button>
+  
+    </form>
+  </div>
 </div>
+
+</section>
+
+
 
     <script src="/HTML recap/js/main.js"></script>
   </body>
