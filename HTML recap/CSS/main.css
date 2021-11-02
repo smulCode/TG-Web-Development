@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #111;
+  font-size: 16px;
+  color: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  z-index: 90;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: rgba(17, 17, 17, 0.438);
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+#hamburger-button {
+  background-color: transparent;
+  border: none;
+}
+
+.nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 999;
+}
+
+.nav-item {
+  margin-left: 5rem;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: #eab847;
+  border-bottom: 2px solid #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.nav-logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fefefe;
+  z-index: 4;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  margin: auto 10vw;
+}
+
+.title {
+  margin: 1em 0;
+  font-size: 2em;
+  font-weight: 600;
+  color: #eab847;
+}
+
+.title:first-of-type {
+  margin-top: 8vh;
+}
+
+@media only screen and (max-width: 948px) {
+  header {
+    z-index: 90;
+    position: fixed;
+    width: 100%;
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #111;
+    width: 100%;
+    border-radius: 0px 0px 3px 3px;
+    text-align: center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    height: 100vh;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .navbar {
+    background-color: #111;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+  .nav-link:hover {
+    color: #fff;
+    font-size: 1.7em;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-bottom: 1px solid #eab847;
+  }
+  .nav-logo {
+    margin: 0 auto;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
+  }
+}
+/*# sourceMappingURL=main.css.map */
