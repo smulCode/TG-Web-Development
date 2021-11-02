@@ -1,0 +1,12 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: tomato;
+  background-color: #111;
+}
+/*# sourceMappingURL=main.css.map */
