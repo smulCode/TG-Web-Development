@@ -4,7 +4,6 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 html {
@@ -127,6 +126,10 @@ header {
   margin-top: 8vh;
 }
 
+.opdracht3 {
+  margin: 10em 10vw;
+}
+
 .form-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -201,7 +204,36 @@ header {
   color: #fff;
   background-color: #111;
   border: none;
-  margin-top: 1em;
+  margin: 1em 1em 1em 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-form:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: #fff;
+  color: #111;
+  border: 1px solid #111a;
+}
+
+.opdracht4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10em 10vw;
+}
+
+.example {
+  margin: 1em 0em;
 }
 
 @media only screen and (max-width: 948px) {
