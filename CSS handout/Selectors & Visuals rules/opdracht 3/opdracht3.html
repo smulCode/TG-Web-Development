@@ -1,73 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS handout/CSS/main.css" />
     <link
-    rel="stylesheet"
-    href="/CSS handout/CSS/main.css">
-    <link rel="stylesheet" href="/CSS handout/Selectors & Visuals rules/opdracht 3/CSS/style.css">
+      rel="stylesheet"
+      href="/CSS handout/Selectors & Visuals rules/opdracht 3/CSS/style.css"
+    />
     <title>Selectors & Visuals rules - Opdracht 3</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="#" class="nav-logo">CSS Handout</a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="/CSS handout/index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="/CSS handout/Selectors & Visuals rules/opdracht 1/opdracht1.html"
+              class="nav-link"
+              >Opdracht 1</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="/CSS handout/Selectors & Visuals rules/opdracht 2/opdracht2.html"
+              class="nav-link"
+              >Opdracht 2</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="/CSS handout/Selectors & Visuals rules/opdracht 3/opdracht3.html"
+              class="nav-link"
+              >Opdracht 3</a
+            >
+          </li>
+        </ul>
+        <button id="hamburger-button" class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </nav>
+    </header>
 
-  <header class="header">
-    <nav class="navbar">
-      <a href="#" class="nav-logo">CSS Handout</a>
-      <ul class="nav-menu">
-        <li class="nav-item">
-          <a href="/CSS handout/index.html" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="/CSS handout/Selectors & Visuals rules/opdracht 1/opdracht1.html" class="nav-link">Opdracht 1</a>
-        </li>
-        <li class="nav-item">
-          <a href="/CSS handout/Selectors & Visuals rules/opdracht 2/opdracht2.html" class="nav-link">Opdracht 2</a>
-        </li>
-        <li class="nav-item">
-          <a href="/CSS handout/Selectors & Visuals rules/opdracht 3/opdracht3.html" class="nav-link">Opdracht 3</a>
-        </li>
-      
-      </ul>
-      <button id="hamburger-button" class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-    </nav>
-  </header>
-
-
-  <section class="main">
+    <section class="main">
       <h1>Opdracht 3</h1>
 
       <p>We kunnen CSS-selectors onderverdelen in vijf categorieën:</p>
 
       <ol class="selector-list">
-        <li class="selecter-content"><a href="" class="selector-links">Eenvoudige selectors</a> <p>Selecteer elementen op basis van naam, id, klasse. </p> 
-
+        <li class="selecter-content">
+          <a href="" class="selector-links">Eenvoudige selectors</a>
+          <p>Selecteer elementen op basis van naam, id, klasse.</p>
         </li>
 
-        <li class="selecter-content"><a href="" class="selector-links">Combinator-selectors</a> <p>Selecteer elementen op basis van een specifieke relatie ertussen 
-        </p> 
+        <li class="selecter-content">
+          <a href="" class="selector-links">Combinator-selectors</a>
+          <p>
+            Selecteer elementen op basis van een specifieke relatie ertussen
+          </p>
         </li>
 
-        <li class="selecter-content"><a href="" class="selector-links">Pseudo-class selectors</a> <p>Selecteer elementen op basis van een bepaalde status</p> 
-
-       </li>
-
-        <li class="selecter-content"><a href="" class="selector-links">
-          Pseudo-elements selectors</a> <p>selecteer en stijl een deel van een element</p> 
+        <li class="selecter-content">
+          <a href="" class="selector-links">Pseudo-class selectors</a>
+          <p>Selecteer elementen op basis van een bepaalde status</p>
         </li>
 
-        <li class="selecter-content"><a href="" class="selector-links"> 
-          Attribute selectors</a> <p>Selecteer elementen op basis van een attribuut of attribuutwaarde</p>
+        <li class="selecter-content">
+          <a href="" class="selector-links"> Pseudo-elements selectors</a>
+          <p>selecteer en stijl een deel van een element</p>
         </li>
-        
+
+        <li class="selecter-content">
+          <a href="" class="selector-links"> Attribute selectors</a>
+          <p>
+            Selecteer elementen op basis van een attribuut of attribuutwaarde
+          </p>
+        </li>
       </ol>
+
+      <h2>descendant selectors</h2>
+
+      <p>
+        Zijn afstammeling(descendants) selectors van een ander element. De
+        syntaxis is erg eenvoudig, je geeft de naam van de parent (ouder), één
+        of meer spaties, en dan de naam van het element dat je eigenlijke doel
+        is. Hier volgt een voorbeeld:
+      </p>
+
+      <div class="block">
+        <p>ul li { }</p>
+        <p>header h2 { }</p>
+        <p>footer a { }</p>
+        <p>.module div { }</p>
+        <p>#info-toggle span { }</p>
+        <p>div dl dt a { }</p>
+      </div>
+      <p>
+        Neem bijvoorbeeld ul li { }. Het betekent "elk lijst item dat afstamt
+        van een ongeordende lijst."
+      </p>
+
+      <h2>Class selector</h2>
+
+      <p>
+        Zijn selectors die je hun eigen naam(".class") toegewezen gekregen
+        hebben
+      </p>
     </section>
-      <script src="/CSS handout/js/main.js"></script>
-    
-</body>
+    <script src="/CSS handout/js/main.js"></script>
+  </body>
 </html>
