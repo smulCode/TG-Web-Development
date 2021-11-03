@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link
+    rel="stylesheet"
+    href="/CSS handout/CSS/main.css">
     <link rel="stylesheet" href="/CSS handout/Selectors & Visuals rules/opdracht 1/CSS/style.css">
     <title>Selectors & Visuals rules - Opdracht 1</title>
     
@@ -12,29 +14,33 @@
 <body>
 
     
-    <header>
-        <nav>
-            <ul><li><a href="/CSS handout/index.html">Home</a></li></ul>
-          <ul>
-            <div class="SV-title">
-            <li>
-              <a
-                href="/CSS handout/Selectors & Visuals rules/opdracht 1/opdracht1.html"
-              >opdracht 1</a>
-            </li>
-            <li>
-              <a
-                href="/CSS handout/Selectors & Visuals rules/opdracht 2/opdracht2.html"
-              >opdracht 2</a>
-            </li>
-            <li>
-              <a
-                href="/CSS handout/Selectors & Visuals rules/opdracht 3/opdracht3.html"
-              >opdracht 3</a>
-            </li>
-          </ul>
-        </div>
-        </nav>
+  <header class="header">
+    <nav class="navbar">
+      <a href="#" class="nav-logo">CSS Handout</a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="/CSS handout/index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="/CSS handout/Selectors & Visuals rules/opdracht 1/opdracht1.html" class="nav-link">Opdracht 1</a>
+        </li>
+        <li class="nav-item">
+          <a href="/CSS handout/Selectors & Visuals rules/opdracht 2/opdracht2.html" class="nav-link">Opdracht 2</a>
+        </li>
+        <li class="nav-item">
+          <a href="/CSS handout/Selectors & Visuals rules/opdracht 3/opdracht3.html" class="nav-link">Opdracht 3</a>
+        </li>
+      
+      </ul>
+      <button id="hamburger-button" class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <section class="main">
         <h1>Opdracht 1</h1>
 
         <p>Er zijn drie manieren om CSS in je HTML pagina's te krijgen:</p>
@@ -54,9 +60,9 @@
             </details></li>
 
         </ol>
+      </section>
 
-
-
+        <script src="/CSS handout/js/main.js"></script>
 
 </body>
 </html>
