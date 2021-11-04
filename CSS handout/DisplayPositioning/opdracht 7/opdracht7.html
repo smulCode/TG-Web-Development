@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS handout/CSS/main.css" />
+    <title>Display & Positioning</title>
+
+    <style>
+      .block {
+          color: darkblue;
+          position: relative;
+        height: 100vh;
+     
+      }
+
+      h1{
+          font-size: 3em;
+      }
+
+      span{
+          color: white;
+      }
+
+      p{
+          text-align:center;
+          color: yellow;
+      }
+
+      img{
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+      }
+      .miniblock{
+          position: absolute;
+            top: 150px;
+            right: 50px;
+
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="#" class="nav-logo">CSS Handout</a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="/CSS handout/index.html" class="nav-link">Home</a>
+          </li>
+        </ul>
+        <button id="hamburger-button" class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </nav>
+    </header>
+    <section class="main">
+      <h2>opdracht 7</h2>
+
+      <div class="block">
+        <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" alt="beach">
+        <div class="miniblock">
+            <h1>Groeten uit <span>Curacao</span></h1>
+            <p>Kom je ook hier vakantie vieren?</p>
+        </div>
+      </div>
+      
+    </section>
+
+    <script src="/CSS handout/js/main.js"></script>
+  </body>
+</html>
