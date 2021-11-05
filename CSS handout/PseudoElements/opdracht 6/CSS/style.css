@@ -1,0 +1,58 @@
+@charset "UTF-8";
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #fff;
+  height: 500px;
+  padding: 1em 0;
+}
+
+.bol {
+  display: inline-block;
+  margin: 1em;
+  border-radius: 100%;
+  background-color: black;
+  height: 200px;
+  width: 200px;
+  font-size: 3.5em;
+  text-align: center;
+  padding: 1em 0;
+}
+
+/* right bol before text */
+.smallbol::before {
+  content: "⋅";
+  position: relative;
+  background-color: black;
+  left: -70px;
+  border-radius: 100%;
+  bottom: 80px;
+  padding: 0 30px;
+  -webkit-transform: rotate(70deg);
+          transform: rotate(70deg);
+}
+
+/* left bol after text */
+.smallbol::after {
+  content: '.';
+  position: relative;
+  background-color: black;
+  left: 70px;
+  border-radius: 100%;
+  bottom: 80px;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  padding: 0 30px;
+}
+/*# sourceMappingURL=style.css.map */

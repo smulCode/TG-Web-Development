@@ -1,0 +1,57 @@
+
+
+.container {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-direction:row;
+    background-color: #fff;
+    height: 500px;
+    padding: 1em 0;
+    
+   
+
+
+
+
+}
+.bol{
+    display: inline-block;
+    margin: 1em;
+    border-radius: 100%;
+    background-color: black;
+    height: 200px;
+    width: 200px;
+    font-size: 3.5em;
+    text-align: center;
+    padding:1em 0;
+}
+/* right bol before text */
+.smallbol::before {
+    content:"⋅";
+    position: relative;
+    background-color: black;
+    left:-70px;
+    border-radius: 100%;
+    bottom:80px;
+    padding:0 30px;
+    transform: rotate(70deg);
+
+    
+    
+    
+  }
+  
+  /* left bol after text */
+  .smallbol::after{
+    content:'.';
+    position: relative;
+    background-color: black;
+    left:70px;
+    border-radius: 100%;
+    bottom:80px;
+    transform: rotate(20deg);
+    padding:0 30px;
+    
+   
+  }

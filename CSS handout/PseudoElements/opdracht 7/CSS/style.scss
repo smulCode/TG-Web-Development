@@ -1,0 +1,38 @@
+.container {
+
+    margin: 5em;
+}
+
+.block {
+    background-color: red;
+    height:100px;
+    width:100px;
+    transform: rotate(30deg);
+    
+  
+   
+}
+    
+
+.block ::before{
+    content: "";
+    position:absolute;
+    background-color: red;
+    height:100px;
+    width:100px;
+    transform: rotate(20deg);
+    
+  
+   
+    
+}
+.block::after {
+    content: "";
+    position: relative;
+    background-color: red;
+    height:100px;
+    width:100px;
+    transform: rotate(40deg);
+   
+
+}
