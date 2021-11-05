@@ -1,0 +1,25 @@
+img{
+    height:100%;
+    width:100%;
+    object-fit: contain;
+}
+.container{
+    margin: 3em;
+    display:block;
+    background-image:url(https://images.unsplash.com/photo-1635880624075-8d8815783c1c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2071&q=80);
+    background-size:contain;
+    background-repeat:no-repeat;
+    height:500px;
+    width:500px;
+}
+.container::before{
+    position: absolute;
+    content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, similique facere. Libero repellendus ut aperiam quibusdam repudiandae cum, autem id, excepturi, amet obcaecati nulla vero reiciendis. Temporibus ipsa corrupti magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, similique facere. Libero repellendus ut aperiam quibusdam repudiandae cum, autem id, excepturi, amet obcaecati nulla vero reiciendis. Temporibus ipsa corrupti magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, similique facere. Libero repellendus ut aperiam quibusdam repudiandae cum, autem id, excepturi, amet obcaecati nulla vero reiciendis. Temporibus ipsa corrupti magni.";
+    height:500px;
+    width:500px;
+    
+ 
+
+
+
+}

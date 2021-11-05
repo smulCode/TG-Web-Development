@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/CSS handout/CSS/main.css" />
-    <link rel="stylesheet" href="/CSS handout/PseudoElements/opdracht 2/CSS/style.css"/>
+    <link rel="stylesheet" href="/CSS handout/PseudoElements/opdracht 3/CSS/style.css"/>
+
+
 
 
     <title>Pseudo elements</title>
@@ -35,35 +37,81 @@
 <div class="list">
       <ol>
         <li>first-line</li>
-        <p>Eerste regel word opgemaakt</p>
+        <div class="fl box">
+        <p >Eerste regel word opgemaakt.</p>
+        <p> Alleen de eerste word opgemaakt</p></div>
         <li>first-letter</li>
-        <p>eerste letter word opgemaakt</p>
+
+        <div class="box flt"> <p>eerste letter word opgemaakt</p></div>
+       
         <li>after</li>
-        <p>Met after kan je content toevoegen achter een element</p>
+        <div class="box af"> Met after kan je content toevoegen achter een element</div>
+       
         <li>before</li>
-        <p>Met before kan je content toevoegen voor een element</p>
+        <div class="box bf">Met before kan je content toevoegen voor een element</div>
+       
         <li>Selection</li>
-        <p>
+        <div class="box sl"> 
           Met selection kan je het gedeelte van een element dat door een
           gebruiker is geselecteerd opmaken.
-        </p>
+       </div>
+       
         <li>backdrop</li>
-        <p>is een balk ter grootte van de viewport die direct onder elk element wordt weergegeven dat in de modus Volledig scherm wordt weergegeven.</p>
-        <li>cue</li><p>Het ::cue CSS pseudo-element komt overeen met WebVTT-cues binnen een geselecteerd element. Dit kan worden gebruikt om bijschriften en andere aanwijzingen in media met VTT-tracks te stylen.</p>
+        <div class="box bd">
+          <video controls
+          src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
+          poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"
+          width="620">
+        Sorry, your browser doesn't support embedded videos.  Time to upgrade!
+        </video>
+        
+         
+        is een balk ter grootte van de viewport die direct onder elk element wordt weergegeven dat in de modus Volledig scherm wordt weergegeven.</div>
+
+        <li>cue</li><div class="box cu"><p>Het ::cue CSS pseudo-element komt overeen met WebVTT-cues binnen een geselecteerd element. Dit kan worden gebruikt om bijschriften en andere aanwijzingen in media met VTT-tracks te stylen.</p></div>
+
         <li>first-selector-button</li>
-        <p>Het ::file-selector-button CSS pseudo-element vertegenwoordigt de knop van een input  van type="file"</p>
+        <div class="box fsb"><form>
+          <label for="fileUpload">Upload file</label>
+          <input type="file" id="fileUpload">
+        </form><p>Het ::file-selector-button CSS pseudo-element vertegenwoordigt de knop van een input  van type="file"</p></div>
+        
         <li>grammar-error</li>
-        <p>Het ::grammar-error CSS-pseudo-element vertegenwoordigt een tekstsegment dat door de user-agent is gemarkeerd als grammaticaal onjuist.</p>
-        <li>marker</li><p>Het ::marker CSS pseudo-element selecteert het markeringsvak van een lijstitem, dat meestal een opsommingsteken of nummer bevat. Het werkt op elk element of pseudo-element dat is ingesteld om weer te geven: list-item, zoals de elementen li en  summary .</p>
+        <div class="box gr"><p>Het ::grammar-error CSS-pseudo-element vertegenwoordigt een tekstsegment dat door de user-agent is gemarkeerd als grammaticaal onjuist.</p><p>typofsdlfhds</p></div>
+        
+        <li>marker</li>
+        <div class="box">
+        <ul>
+          <li>Peaches</li>
+          <li>Apples</li>
+          <li>Plums</li>
+        </ul>
+      </div>
         <li>part()</li>
         <p>Het ::part CSS pseudo-element vertegenwoordigt elk element binnen een schaduwboom met een overeenkomend onderdeelkenmerk.</p>
+
+        
         <li>placeholder</li>
+        <div class="box">
+          <input placeholder="Type hier...">
+        </div>
         <p>
             Het ::placeholder CSS pseudo-element vertegenwoordigt de placeholder tekst in een  input  of textarea element.</p>
         <li>slotted()</li>
-        <p>het ::slotted() CSS-pseudo-element vertegenwoordigt elk element dat in een sleuf in een HTML-sjabloon is geplaatst</p>
-        <li>spelling-error</li><p>Het ::spelling-error CSS-pseudo-element vertegenwoordigt een tekstsegment dat door de user-agent is gemarkeerd als onjuist gespeld.</p>
-        <li>target-text</li><p>The ::target-text CSS pseudo-element represents the text that has been scrolled to if the browser supports scroll-to-text fragments. It allows authors to choose how to highlight that section of text.</p>
+
+        <div class="box slotted">
+          <person-details>
+            <p slot="person-name">Dr. boem</p>
+            <span slot="person-age">11</span>
+            <span slot="person-occupation">Streamer</span>
+          </person-details>
+        </div>
+        <p>het ::slotted() CSS-pseudo-element vertegenwoordigt elk element dat in een slot in een HTML-sjabloon is geplaatst</p>
+        <li>spelling-error</li>
+        
+        <div class="box spel-er"><p contenteditable spellcheck="true">We are coegdfgfddffbgning dancing at a party tonight.</p>
+        </div><p>Het ::spelling-error CSS-pseudo-element vertegenwoordigt een tekstsegment dat door de user-agent is gemarkeerd als onjuist gespeld.</p>
+        <li>target-text</li><p class="target">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae suscipit laborum ducimus, dolorum eum exercitationem quas perferendis tempora voluptatum accusantium temporibus error magni alias itaque, consequuntur numquam a! Minus, tempora!</p><p>The ::target-text CSS pseudo-element represents the text that has been scrolled to if the browser supports scroll-to-text fragments. It allows authors to choose how to highlight that section of text.</p>
       </ol>
 
       <q> ze beginnen allemaal met :: </q>
@@ -72,6 +120,11 @@
 <!-- 
     // morgen mee beginnen -->
     </section>
+
+
+  
+
+   
 
     <script src="/CSS handout/js/main.js"></script>
   </body>
