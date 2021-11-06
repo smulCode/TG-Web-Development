@@ -1,0 +1,38 @@
+.flex-container{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:row;
+    background-color:khaki;
+    padding: 1em;
+    
+}
+.flex-container:nth-of-type(2){
+    justify-content:flex-end;
+
+}
+.flex-container:nth-of-type(3){
+    justify-content:flex-start;
+
+}
+.flex-container:nth-of-type(4){
+    justify-content:space-between;
+
+}
+.flex-container:nth-of-type(5){
+    justify-content:space-evenly;
+
+}
+.flex-container:nth-of-type(6){
+    justify-content:space-around;
+
+}
+
+
+.block{
+    padding: 1em 2em;
+    background-color:lightgreen;
+    margin-left: 1em;
+  
+}
+

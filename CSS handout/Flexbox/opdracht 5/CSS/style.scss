@@ -1,0 +1,38 @@
+.flex-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    background-color:khaki;
+   
+    margin: 0 auto;
+    height: 200px;
+    width: 300px;
+    
+}
+.flex-container:nth-of-type(2){
+   align-items:flex-end;
+
+}
+.flex-container:nth-of-type(3){
+   align-items:flex-start;
+
+}
+.flex-container:nth-of-type(4){
+   align-items:stretch;
+
+}
+
+
+
+.block{
+    
+    padding: 1em 2em;
+    background-color:lightgreen;
+    margin-left: 1em;
+ 
+  
+}
+
+h4{
+    text-align: center;
+}

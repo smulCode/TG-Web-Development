@@ -1,0 +1,70 @@
+
+
+.flex-container {
+    width: 500px;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0;
+
+
+    .section {
+        transition: all 0.3s ease-in-out;
+        display: flex;
+        margin: 2px 0;
+        
+      
+        &.blue {
+            flex: 30;
+            background-color: steelblue;
+        }
+        
+    
+        }
+    }
+    
+    .block {
+        height: 25px;
+        flex: 1;
+        display: flex;
+        transition: all 0.3s ease-in-out;
+        flex-direction: row;
+        
+        &.one {
+            opacity: 0.8;
+            width: 100%;
+        }
+        
+        &.two {
+            opacity: 0.6;
+            width: 50%;
+        }
+        
+        &.three {
+            opacity: 0.4;
+            width: 60%;
+        }
+        
+        &.four {
+            opacity: 0.5;
+            width: 80%;
+        }
+        
+        &.five {
+            opacity: 0.7;
+            width: 30%;
+        }
+        
+        &.six {
+            opacity: 0.4;
+            width: 45%;
+        }
+        
+ 
+        
+        &:hover {
+            cursor: pointer;
+            opacity: 1;
+        }
+    }
