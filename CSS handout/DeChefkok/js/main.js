@@ -28,7 +28,7 @@ const sectionOne = document.querySelector(".main");
 
 
 const sectionOneOptions = {
-  rootMargin: "-600px 0px 0px 0px",
+  rootMargin: "-200px 0px 0px 0px",
 };
 
 const sectionOneObservers = new IntersectionObserver(function (
@@ -46,7 +46,6 @@ const sectionOneObservers = new IntersectionObserver(function (
 sectionOneOptions);
 
 sectionOneObservers.observe(sectionOne);
-
 
 
 ///overlay

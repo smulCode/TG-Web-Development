@@ -155,12 +155,13 @@ header {
 .primary-btn {
   color: #fff;
   background-color: transparent;
-  padding: 1.3em 4em;
+  padding: 1.2em 2.3em;
   text-transform: uppercase;
   border: 1px solid #6187d8;
   -webkit-transition: 0.6s;
   transition: 0.6s;
   cursor: pointer;
+  width: 145px;
 }
 
 .primary-btn a {
@@ -169,7 +170,7 @@ header {
 
 .primary-btn:nth-of-type(2) {
   border: 1px solid #80b380;
-  margin-left: 0.7rem;
+  margin-left: 0.3rem;
 }
 
 .primary-btn:nth-of-type(2) a {
@@ -201,6 +202,7 @@ header {
 
 .main-content {
   position: absolute;
+  margin-left: 1em;
   right: 10%;
 }
 
@@ -210,7 +212,7 @@ header {
 }
 
 .main-content p {
-  width: 25em;
+  width: 18em;
   margin-bottom: 1rem;
 }
 
@@ -219,8 +221,8 @@ header {
 }
 
 .populaire-gerechten-section h2 {
-  font-size: 2.3em;
-  font-weight: bold;
+  font-size: 3.3em;
+  font-weight: bolder;
   text-align: center;
   margin-top: 1em;
 }
@@ -251,6 +253,11 @@ header {
   -ms-flex-item-align: end;
       align-self: flex-end;
   color: #111;
+  margin-top: 2em;
+}
+
+.card-link:hover {
+  color: #6187d8;
   cursor: pointer;
 }
 
@@ -294,7 +301,7 @@ header {
 }
 
 .fill {
-  height: 150vh;
+  height: 100vh;
 }
 
 .menu-title {
@@ -330,7 +337,7 @@ header {
 }
 
 .menu-dishes h2 {
-  font-size: 2.3em;
+  font-size: 3.3em;
   margin: 1em;
   text-align: center;
 }
@@ -404,6 +411,11 @@ video {
      object-fit: cover;
 }
 
+.contact-social {
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
 @media only screen and (min-width: 1080px) {
   header {
     z-index: 90;
@@ -433,8 +445,11 @@ video {
     -webkit-box-shadow: 0 3px 20px rgba(17, 17, 17, 0.2);
             box-shadow: 0 3px 20px rgba(17, 17, 17, 0.2);
   }
-  .nav-link {
+  .nav-scrolled a {
     color: #111;
+  }
+  .nav-link {
+    color: #fefefe;
   }
   .hamburger {
     display: none;
@@ -444,6 +459,7 @@ video {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+    color: #fefefe;
   }
   .nav-menu {
     display: -webkit-box;
@@ -465,7 +481,7 @@ video {
     height: 100%;
     -webkit-box-shadow: none;
             box-shadow: none;
-    width: 30%;
+    width: 27%;
     font-size: 1.5em;
   }
   .dishes {
@@ -479,7 +495,7 @@ video {
     margin-top: 6em;
   }
   .menu-dishes h2 {
-    font-size: 2.3em;
+    font-size: 3.5em;
     margin: 1em;
     text-align: center;
   }
@@ -492,7 +508,10 @@ video {
         grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 3em;
     place-content: center;
-    width: 1000px;
+    width: 900px;
+  }
+  .main-content p {
+    width: 22em;
   }
   .container {
     display: -webkit-box;
@@ -530,6 +549,38 @@ video {
     margin-bottom: 1em;
     margin-top: -1em;
   }
+  #overlay {
+    position: fixed;
+    display: hidden;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+  }
+  .img-chef {
+    position: fixed;
+  }
+  #text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  .overlay-text {
+    font-size: 4em;
+    color: #fefefe;
+  }
+  .click-chef {
+    font-size: 2em;
+    color: #80b380;
+  }
   .chef-container {
     display: block;
     position: relative;
@@ -539,6 +590,23 @@ video {
     position: absolute;
     top: -472px;
     left: -100px;
+  }
+  .fade-in {
+    opacity: 0;
+    -webkit-transition: opacity 300ms ease-in;
+    transition: opacity 300ms ease-in;
+  }
+  .fade-in.appear {
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 380px) {
+  .fill {
+    height: calc(200vh + 50vw);
+  }
+  .main-content {
+    right: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
