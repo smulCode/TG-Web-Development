@@ -18,7 +18,7 @@ $bg-green-clr: rgb(128, 179, 128);
 
 html {
   font-family: $font-stack;
-  scroll-behavior: smooth;
+  // scroll-behavior: smooth;
 }
 body {
   background-color: $bg-clr;
@@ -32,6 +32,7 @@ li {
 
 a {
   text-decoration: none;
+  font-family: $font-stack;
 }
 
 header {
@@ -45,7 +46,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
-  background-color: #111;
+  background-color: $bg-clr;
 }
 
 .nav-menu {
@@ -53,13 +54,15 @@ header {
   left: -100%;
   top: 3.5rem;
   flex-direction: column;
-  background-color: #111;
+  background-color: $bg-green-clr;
   width: 100%;
   border-radius: 0px 0px 3px 3px;
   transition: 0.3s;
   box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   height: 100vh;
   justify-content: flex-start;
+  font-size: 2.5em;
+  text-align: center;
 }
 
 .bar {
@@ -68,7 +71,7 @@ header {
   height: 1.3px;
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
-  background-color: #fff;
+  background-color: $text-clr;
 }
 
 #hamburger-button {
@@ -81,17 +84,16 @@ header {
 }
 
 .nav-item {
-  border-top: 1px solid rgba(204, 204, 204, 0.774);
+  // border-top: 1px solid rgba(204, 204, 204, 0.774);
   padding: 1em;
 }
 .nav-link {
-  font-size: 14px;
   font-weight: 500;
   color: #fff;
 }
 
 .nav-link:hover {
-  color: #fff;
+  color: $text-clr2;
   transition: 0.4s;
   border-bottom: 1px solid #ccc;
 }
@@ -103,7 +105,7 @@ header {
 .nav-logo {
   font-size: 1.3em;
   font-weight: 500;
-  color: #fefefe;
+  color: $text-clr;
   z-index: 4;
 }
 
@@ -129,8 +131,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
+  height: 50vh;
   width: 100%;
+  background: url("https://images.unsplash.com/photo-1428515613728-6b4607e44363?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $text-clr2;
 }
 
 .primary-btn {
@@ -138,17 +144,34 @@ header {
   background-color: transparent;
   padding: 1.3em 4em;
   text-transform: uppercase;
-  border: 1px solid #333;
+  border: 1px solid $text-clr2;
   transition: 0.6s;
   cursor: pointer;
 
   a {
-    color: #111;
+    color: $text-clr2;
   }
 }
 
+.primary-btn:nth-of-type(2) {
+  border: 1px solid $text-clr3;
+  margin-left: 0.7rem;
+  a {
+    color: $text-clr3;
+  }
+}
 .primary-btn:hover {
-  background-color: #111;
+  background-color: $text-clr2;
+  border: 1px solid $bg-clr;
+  color: #fff;
+
+  a {
+    color: #fff;
+    transition: 0.1s;
+  }
+}
+.primary-btn:nth-of-type(2):hover {
+  background-color: $bg-green-clr;
 
   color: #fff;
 
@@ -157,12 +180,191 @@ header {
     transition: 0.1s;
   }
 }
+.main-content {
+  position: absolute;
+  right: 10%;
 
+  h1 {
+    font-size: 4em;
+    margin-bottom: 0.8rem;
+  }
+
+  p {
+    width: 25em;
+    margin-bottom: 1rem;
+  }
+}
+
+.populaire-gerechten-section {
+  height: 50vh;
+
+  h2 {
+    font-size: 2.3em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1em;
+  }
+}
+
+.dishes {
+  margin: 1vw 10vw;
+  padding: 0 10vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  // grid-template-columns: 1fr;
+  place-content: center;
+  gap: 13vw;
+  margin-top: 6em;
+}
+
+.card {
+  height: 450px;
+  width: 250px;
+  margin: 0 auto;
+}
+.card-title {
+  h4 {
+    font-size: 1.2em;
+  }
+}
+
+.card-link {
+  align-self: flex-end;
+  color: $text-clr;
+  cursor: pointer;
+}
+
+.img-card {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  clip-path: circle(40% at 52% 52%);
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.card-title,
+.menu-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.fill {
+  height: 150vh;
+}
+.menu-title {
+  margin: 1em auto;
+  text-align: center;
+  font-size: 1.2em;
+}
+.menu-item {
+  height: 100px;
+  width: 300px;
+}
+
+.menu-item {
+  p {
+    font-size: 1.1em;
+  }
+}
+
+.menu-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 3em;
+  place-content: center;
+  margin: 0 10vw;
+  padding: 0 10vw;
+  // border: 1px solid red;
+
+  // // show grid border
+
+  // .menu-item{
+  //   border: 1px solid blue;
+  // }
+}
+
+.menu-dishes {
+  margin: 15vw 0;
+  h2 {
+    font-size: 2.3em;
+    margin: 1em;
+    text-align: center;
+  }
+}
+
+//Footer
+
+footer {
+  color: $text-clr2;
+  height: 350px;
+  background-color: $bg-green-clr;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em 0;
+}
+
+.contact-content {
+  h4 {
+    font-size: 1.4em;
+    margin-bottom: 1em;
+  }
+
+  p {
+    line-height: 1.6em;
+  }
+}
+
+.f-nav {
+  width: 250px;
+  h4 {
+    margin: 1em 0;
+    font-size: 1.4em;
+  }
+  a {
+    color: $text-clr2;
+    line-height: 1.6em;
+  }
+}
+
+.f-nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+.chef-container {
+  display: none;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+//media queries
 @media only screen and (min-width: 1080px) {
   header {
     z-index: 90;
     position: fixed;
     width: 100%;
+  }
+
+  .fill {
+    display: none;
   }
 
   .navbar {
@@ -171,16 +373,27 @@ header {
     align-items: center;
     padding: 0 1.5rem;
     // background-color: rgba(17, 17, 17, 0.438);
-    background-color: #111;
+    background-color: transparent;
     height: 4em;
   }
 
-  .navbar:hover {
-    background-color: #111;
+  .nav-scrolled {
+    color: $text-clr;
+    background: $bg-clr;
+    box-shadow: 0 3px 20px rgba(#111, 0.2);
+  }
+
+  .nav-link {
+    color: $text-clr;
   }
 
   .hamburger {
     display: none;
+  }
+
+  .nav-logo {
+    font-size: 1.5em;
+    flex: 1;
   }
 
   .nav-menu {
@@ -193,6 +406,101 @@ header {
     text-align: center;
     height: 100%;
     box-shadow: none;
-    width: 60%;
+    width: 30%;
+    font-size: 1.5em;
+  }
+
+  .dishes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-content: center;
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-top: 6em;
+  }
+  .menu-dishes {
+    h2 {
+      font-size: 2.3em;
+      margin: 1em;
+      text-align: center;
+    }
+  }
+
+  .menu-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 3em;
+    place-content: center;
+    width: 1000px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  //footer
+
+  footer {
+    height: 250px;
+  }
+
+  .contact {
+    flex-direction: row;
+    padding: 2em 10vw;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .f-nav-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .f-nav {
+    h4 {
+      margin-bottom: 1em;
+      margin-top: -1em;
+    }
+  }
+
+  // #overlay {
+  //   position: fixed;
+  //   display:hidden;
+  //   width: 100%;
+  //   height: 100%;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   background-color: rgba(0,0,0,0.5);
+  //   z-index: 2;
+  //   cursor: pointer;
+
+  // }
+  // .img-chef{
+  //   position:fixed;
+
+  // }
+  // #text{
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   font-size: 50px;
+  //   color: white;
+  //   transform: translate(-50%,-50%);
+  //   -ms-transform: translate(-50%,-50%);
+  // }
+  .chef-container {
+    display: block;
+    position: relative;
+  }
+  .img-chef {
+    z-index: 9;
+    position: absolute;
+    top: -472px;
+    left: -100px;
   }
 }
