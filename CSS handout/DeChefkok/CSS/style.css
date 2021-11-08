@@ -416,6 +416,10 @@ video {
   cursor: pointer;
 }
 
+.overlay-content {
+  display: none;
+}
+
 @media only screen and (min-width: 1080px) {
   header {
     z-index: 90;
