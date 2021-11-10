@@ -1,0 +1,64 @@
+$primary-color:rgb(136, 224, 224);
+$secondary-color: #1e1e1e;
+$button-color:rgb(204, 107, 123);
+$button-hover-color:steelblue; 
+
+// opdracht 1
+@mixin btn-clr {
+    background-color: $button-color;
+    color: $secondary-color;
+
+    &:hover{
+        background-color: $button-hover-color;
+        color: $primary-color;
+}
+
+}
+//opdracht 2
+@mixin transition {
+        background-color: red;
+        transition: 1s ease-in-out;
+
+        &:hover{
+            background-color: blue;
+            cursor: pointer;
+          
+        
+      
+   
+}}
+button{
+    @include btn-clr();
+    
+    padding: 2em 3em;
+    border: 2px solid $secondary-color;
+    border-radius:10%;
+    margin: 1em;
+
+    transition:all 0.3s ease-in-out;
+    
+
+    &:hover{
+  
+        border: 2px solid $primary-color;
+        cursor: pointer;
+        transform: scale(1.1) translateY(-10px);
+        box-shadow:0  10px 4px 0 rgba(0,0,0, 0.3);
+        
+    }
+
+}
+
+   
+
+.colorChangingSquare {
+    @include transition();
+    width: 100px;
+    height: 100px;
+   
+}
+
+
+body{
+    background-color: teal;
+}

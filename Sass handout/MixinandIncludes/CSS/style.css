@@ -1,5 +1,5 @@
 button {
-  background-color: pink;
+  background-color: #cc6b7b;
   color: #1e1e1e;
   padding: 2em 3em;
   border: 2px solid #1e1e1e;
@@ -10,13 +10,33 @@ button {
 }
 
 button:hover {
-  background-color: purple;
+  background-color: steelblue;
   color: #88e0e0;
+}
+
+button:hover {
   border: 2px solid #88e0e0;
   cursor: pointer;
   -webkit-transform: scale(1.1) translateY(-10px);
           transform: scale(1.1) translateY(-10px);
   -webkit-box-shadow: 0 10px 4px 0 rgba(0, 0, 0, 0.3);
           box-shadow: 0 10px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.colorChangingSquare {
+  background-color: red;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  width: 100px;
+  height: 100px;
+}
+
+.colorChangingSquare:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+
+body {
+  background-color: teal;
 }
 /*# sourceMappingURL=style.css.map */
