@@ -1,0 +1,22 @@
+button {
+  background-color: pink;
+  color: khaki;
+  padding: 2em 3em;
+  border: 2px solid khaki;
+  border-radius: 10%;
+  margin: 1em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #67b874;
+  color: teal;
+  border: 2px solid teal;
+  cursor: pointer;
+  -webkit-transform: scale(1.1) translateY(-10px);
+          transform: scale(1.1) translateY(-10px);
+  -webkit-box-shadow: 0 10px 4px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 10px 4px 0 rgba(0, 0, 0, 0.3);
+}
+/*# sourceMappingURL=style.css.map */
