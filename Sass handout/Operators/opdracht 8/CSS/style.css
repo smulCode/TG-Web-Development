@@ -4,7 +4,8 @@ body {
 }
 
 .image {
-  width: auto;
+  height: 6;
+  width: 6px;
   background-color: purple;
 }
 /*# sourceMappingURL=style.css.map */
