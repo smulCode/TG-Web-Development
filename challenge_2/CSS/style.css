@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.block {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bol {
+  width: 80px;
+  height: 80px;
+  background-color: #1e1e1e;
+  background: url("https://images.unsplash.com/photo-1611915387288-fd8d2f5f928b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80");
+  background-size: cover;
+  margin: 1px;
+  -webkit-animation: bol 4s linear infinite;
+          animation: bol 4s linear infinite;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 11px #ee6352, 0 0 0 20px #d45379, 0 0 0 30px #a4558f, 0 0 0 40px #6d588e, 0 0 0 50px #405378;
+          box-shadow: 0 0 0 11px #ee6352, 0 0 0 20px #d45379, 0 0 0 30px #a4558f, 0 0 0 40px #6d588e, 0 0 0 50px #405378;
+}
+
+.bol:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.bol:nth-child(3) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.bol:nth-child(4) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.bol:nth-child(5) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.bol:nth-child(6) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.bol:nth-child(7) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.bol:nth-child(8) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.bol:nth-child(9) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.bol:nth-child(10) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+@-webkit-keyframes bol {
+  0% {
+    -webkit-transform: scale(0) rotate(-180deg);
+            transform: scale(0) rotate(-180deg);
+  }
+  50% {
+    -webkit-transform: scale(1.1) rotate(45deg);
+            transform: scale(1.1) rotate(45deg);
+  }
+  100% {
+    -webkit-transform: scale(0) rotate(180deg);
+            transform: scale(0) rotate(180deg);
+  }
+}
+
+@keyframes bol {
+  0% {
+    -webkit-transform: scale(0) rotate(-180deg);
+            transform: scale(0) rotate(-180deg);
+  }
+  50% {
+    -webkit-transform: scale(1.1) rotate(45deg);
+            transform: scale(1.1) rotate(45deg);
+  }
+  100% {
+    -webkit-transform: scale(0) rotate(180deg);
+            transform: scale(0) rotate(180deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
