@@ -8,7 +8,6 @@ body {
   background-color: #000;
   display: grid;
   place-items: center;
-
 }
 
 .block {
@@ -26,8 +25,12 @@ body {
   margin: 1px;
   animation: bol 4s linear infinite;
   border-radius: 50%;
-  box-shadow: 0 0 0 11px #ee6352, 0 0 0 20px #d45379, 0 0 0 30px #a4558f,
-    0 0 0 40px #6d588e, 0 0 0 50px #405378;
+  box-shadow: 
+  0 0 0 10px #ee6352, 
+  0 0 0 20px #d45379,
+   0 0 0 30px #a4558f,
+    0 0 0 40px #6d588e, 
+    0 0 0 50px #405378;
 }
 
 .bol:nth-child(2) {
