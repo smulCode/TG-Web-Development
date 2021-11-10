@@ -1,0 +1,11 @@
+body {
+  background-color: coral;
+  height: 100vh;
+}
+
+.image {
+  height: 30px / 5px;
+  width: 24px/ 4;
+  background-color: purple;
+}
+/*# sourceMappingURL=style.css.map */
