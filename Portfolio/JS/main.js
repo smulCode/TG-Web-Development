@@ -27,13 +27,14 @@ function closeMenu() {
 
 //navbar scroll events
 
-const header = document.querySelector("header");
+const header = document.querySelector(".hamburger");
+const navLogo = document.querySelector(".nav-logo");
 const sectionOne = document.querySelector(".section-hero");
 
 const faders = document.querySelectorAll(".fade-in");
 
 const sectionOneOptions = {
-  rootMargin: "-600px 0px 0px 0px",
+  rootMargin: "-500px 0px 0px 0px",
 };
 
 const sectionOneObservers = new IntersectionObserver(function (
@@ -43,8 +44,10 @@ const sectionOneObservers = new IntersectionObserver(function (
   entries.forEach((entry) => {
     if (!entry.isIntersecting) {
       header.classList.add("nav-scrolled");
+      navLogo.classList.add("nav-scrolled");
     } else {
       header.classList.remove("nav-scrolled");
+      navLogo.classList.remove("nav-scrolled");
     }
   });
 },
