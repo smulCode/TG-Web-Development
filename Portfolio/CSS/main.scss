@@ -73,7 +73,7 @@
 //   // scroll-snap-align: start;
 //   // text-align: center;
 // }
-.cases {
+.bg-cases {
   background-color: teal;
   background: url("https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80");
   background: url("https://images.unsplash.com/photo-1618556450991-2f1af64e8191?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1064&q=80");
@@ -212,7 +212,6 @@
   margin-bottom: 13.6vw;
 }
 
-
 .about-text {
   display: flex;
   width: 84.53vw;
@@ -230,17 +229,17 @@
     width: 81.066vw;
   }
 }
-.headline, .cases-headline{
+.headline,
+.cases-headline {
   font-size: 7.5vw;
   font-weight: 600;
   letter-spacing: -0.055em;
   line-height: 91.8%;
   margin-bottom: 13.6vw;
-  
 }
 
-.cases-headline{
- padding-top: 13.6vw;
+.cases-headline {
+  padding-top: 13.6vw;
 }
 
 

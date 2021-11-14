@@ -1,6 +1,4 @@
-
 $font-stack: "Montserrat", sans-serif;
-
 
 html {
   scroll-behavior: smooth;
@@ -38,18 +36,24 @@ header {
 }
 
 section {
-    height: 100vh;}
+  height: 100vh;
+}
 
+.section-about,
+.container-case,
+.contact {
+  margin-bottom: 41.6vw;
+  margin-left: auto;
+  margin-right: auto;
+  width: 84.53vw;
+}
 
-    .section-about, .container-case{
-      margin-bottom: 41.6vw;
-      margin-left: auto;
-      margin-right: auto;
-      width: 84.53vw;
-    }
-    
-    
-.section-headline{
+.cases {
+  margin-bottom: 41.6vw;
+  min-height: 200vh;
+}
+
+.section-headline {
   margin-bottom: 8.6vw;
 }
 
@@ -61,16 +65,17 @@ section {
   margin-right: 0.5rem;
   font-weight: 700;
   color: goldenrod;
-  
 }
-.section-headline::after {
-  content: "";
-  display:block;
-  position: relative;
-  top:-15px;
-  left:11rem ;
-  width: 35vw;
-  height: 1px;
-  background-color: #fffa;
-  margin-left:0.5rem;
-}
+
+// .section-headline::after {
+//   content: "";
+//   display:block;
+//   position: relative;
+//   top:-15px;
+//   left:11rem ;
+//   width: 35vw;
+//   height: 1px;
+//   background-color: #fffa;
+//   margin-left:0.5rem;
+// }
+

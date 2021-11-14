@@ -2,17 +2,20 @@
 .btn {
   color: #fff;
   background-color: transparent;
-  padding: 1.3em 4em;
+  padding: 0.6rem 0;
   text-transform: uppercase;
   border: 1px solid #fff;
   -webkit-transition: 0.6s;
   transition: 0.6s;
   cursor: pointer;
+  text-align: center;
+  width: 6rem;
 }
 
 .btn a {
   color: #fff;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 10px;
 }
 
 .btn:hover {
@@ -23,7 +26,7 @@
   color: #4e4e4e;
   -webkit-transition: 0.1s;
   transition: 0.1s;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .navbar {
@@ -333,19 +336,20 @@ section {
   height: 100vh;
 }
 
-.section-about, .container-case {
+.section-about, .container-case, .contact {
   margin-bottom: 41.6vw;
   margin-left: auto;
   margin-right: auto;
   width: 84.53vw;
 }
 
-.section-headline {
-  margin-bottom: 8.6vw;
+.cases {
+  margin-bottom: 41.6vw;
+  min-height: 200vh;
 }
 
-.section-headline:nth-of-type(1) {
-  margin-left: 1.5rem;
+.section-headline {
+  margin-bottom: 8.6vw;
 }
 
 .section-headline::before {
@@ -356,18 +360,6 @@ section {
   margin-right: 0.5rem;
   font-weight: 700;
   color: goldenrod;
-}
-
-.section-headline::after {
-  content: "";
-  display: block;
-  position: relative;
-  top: -15px;
-  left: 11rem;
-  width: 35vw;
-  height: 1px;
-  background-color: #fffa;
-  margin-left: 0.5rem;
 }
 
 @media only screen and (min-width: 1080px) {
@@ -496,7 +488,7 @@ section {
   z-index: -2;
 }
 
-.cases {
+.bg-cases {
   background-color: teal;
   background: url("https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80");
   background: url("https://images.unsplash.com/photo-1618556450991-2f1af64e8191?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1064&q=80");
