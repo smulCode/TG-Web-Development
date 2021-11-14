@@ -305,15 +305,6 @@ html {
           box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -369,8 +360,7 @@ section {
 }
 
 footer {
-  background-color: thistle;
-  height: 30vh;
+  height: 21vh;
 }
 
 .footer-container {
@@ -389,6 +379,7 @@ footer {
   margin-right: auto;
   width: 85vw;
   text-align: center;
+  padding-top: 2rem;
 }
 
 .footer-contact-list {
@@ -398,15 +389,32 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 50vw;
   margin: 0 auto;
+  border: 1px solid pink;
+  width: 55vw;
 }
 
-i {
-  color: #111;
+.footer-contact-container {
+  margin-bottom: 1rem;
+}
+
+.iconify {
+  color: #fff;
+}
+
+p {
+  font-size: 3.73vw;
+  letter-spacing: -0.01em;
+  line-height: 132%;
+  margin-bottom: 11.2vw;
+  opacity: 0.85;
+  width: 82vw;
+}
+
+.footer-credits {
+  margin: 0 auto;
+  border: 1px solid red;
+  margin-bottom: 0;
 }
 
 @media only screen and (min-width: 1080px) {
@@ -476,6 +484,15 @@ i {
     transition: 0.4s;
     font-size: 1em;
   }
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .main {
@@ -637,7 +654,7 @@ i {
   color: #fff;
   font-size: 3.73vw;
   letter-spacing: -0.01em;
-  line-height: 132.03%;
+  line-height: 132%;
   margin-bottom: 11.2vw;
   opacity: 0.85;
   padding-left: 7.73vw;
