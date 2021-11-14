@@ -5,21 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/Portfolio/CSS/main.css" />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    /> -->
+  
 
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
@@ -38,10 +24,7 @@
             <a href="#" class="nav-link">About</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Work</a>
+            <a href="#" class="nav-link">Projects</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">Contact</a>
@@ -87,16 +70,16 @@
       About Me
       </h3>
       <h2 class="headline">
-        I'm Wesley , driven by creativity, committed to your experience.
+        I'm smulCode , driven by creativity, committed to your experience.
       </h2>
         <div class="about-text">
         
 <!-- edit text progress -->
-          <p>
-            I enjoy creating things that live on the internet. My interest in web development started back in 2020 when i  decided... — turns out hacking together a custom button taught me a lot about HTML & CSS!
+          <p class="text">
+            Hello!My name is Wesley Smulders and I enjoy creating things that live on the internet. My interest in web development started back in 2020 when i  decided... — turns out hacking together a custom button taught me a lot about HTML & CSS!
           </p>
 
-          <P>My goal is to ensure every user has a <q>Wow</q> Experience via Creative, interactive, and developing efficient and scalable optimal solutions. Every project. Every time.</P>
+          <P class="text">My goal is to ensure every user has a <q>Wow</q> Experience via Creative, interactive, and developing efficient and scalable optimal solutions. Every project. Every time.</P>
 <!-- edit text progress -->
 
   
@@ -104,7 +87,8 @@
 
       <div class="about-pic">
         <div class="pic-content">
-          <img src="" alt="" class="profile-pic">
+          <img src="./IMG/wes.png" alt="profile-img" class="profile-pic">
+          <div class="profile-pic-overlay"></div>
         </div>
       </div>
     </section>
@@ -125,8 +109,10 @@
                         <div class="card-text">
                           <div class="card-titel so-many-shadows">Awesome</div>
                         <div class="card-category">Experimental &bull; Creative</div>
-        
-                            <a href="" class="card-link">View Project <i class="far fa-arrow-alt-circle-right"></i></a>
+        <div class="card-link-options">
+                            <a href="" class="card-link">Live <span class="iconify" data-icon="ic:round-web" data-inline="false"></span></a>
+                            <a href="" class="card-link">Git <span class="iconify git-icon-right" data-icon="icon-park-outline:github-one" data-inline="false"></span></a>
+                          </div>
                       </div>
                 </div>
               </div>
@@ -140,7 +126,10 @@
                   <div class="card-text">
                   <div class="card-titel so-many-shadows">BEER</div>
                   <div class="card-category">Food & drink &bull; Blog</div>
-                  <a href="" class="card-link">View Project <i class="far fa-arrow-alt-circle-right"></i> </a>
+                  <div class="card-link-options">
+                    <a href="" class="card-link">Live <span class="iconify" data-icon="ic:round-web" data-inline="false"></span></a>
+                    <a href="" class="card-link">Git <span class="iconify git-icon-right" data-icon="icon-park-outline:github-one" data-inline="false"></span></a>
+                  </div>
                 </div>
                 </div>
               </div>
@@ -153,8 +142,10 @@
                   </div>
                   <div class="card-text">
                   <div class="card-titel so-many-shadows">DONNA</div>
-                  <div class="card-category">Fashion &bull; e-commerce</div>
-                  <a href="" class="card-link">View Project <i class="far fa-arrow-alt-circle-right"></i> </a>
+                  <div class="card-category">Fashion &bull; e-commerce</div> <div class="card-link-options">
+                    <a href="" class="card-link">Live <span class="iconify" data-icon="ic:round-web" data-inline="false"></span></a>
+                    <a href="" class="card-link">Git <span class="iconify git-icon-right" data-icon="icon-park-outline:github-one" data-inline="false"></span></a>
+                  </div>
                 </div>
                 </div>
               </div>
@@ -176,14 +167,15 @@
           <div class="about-text">
           
   <!-- edit text progress -->
-            <p>
+            <p class="text">
               Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
             </p>
   
   <!-- edit text progress -->
- 
+  <div class="btn connect-btn"><a href="mailwgsmulders91@gmail.com" target="_blank" class="email-link">Say Hello</a></div>
+        
         </div>
-        <div class="btn connect-btn"><a href="" class="connect-link">Say Hello</a></div>
+       
         
       </section>
 
@@ -232,7 +224,7 @@
 
       <div class="footer-credits">
         <div class="footer-credits-content">
-          <p>Designed & Built by smulCode</p>
+          <p class="text">Designed & Built by smulCode</p>
         </div>
 
       </div>

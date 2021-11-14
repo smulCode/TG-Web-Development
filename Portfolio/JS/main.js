@@ -20,14 +20,10 @@ function closeMenu() {
   navMenu.classList.remove("active");
 }
 
-
-
-
-
-
 //navbar scroll events
 
-const header = document.querySelector(".hamburger");
+// const header = document.querySelector("header");
+const header = document.querySelector(".bar");
 const navLogo = document.querySelector(".nav-logo");
 const sectionOne = document.querySelector(".section-hero");
 
@@ -55,36 +51,27 @@ sectionOneOptions);
 
 sectionOneObservers.observe(sectionOne);
 
-
-
-
-
-
 //fade-in content
 const appearOptions = {
-  threshold:1,
-  rootMargin: "0px 0px 300px 0px"
+  threshold: 1,
+  rootMargin: "0px 0px 300px 0px",
 };
 
 const appearOnScroll = new IntersectionObserver(function (
   entries,
   appearOnScroll
 ) {
-  entries.forEach(entry => {
+  entries.forEach((entry) => {
     if (!entry.isIntersecting) {
       return;
     } else {
-      entry.target.classList.add('appear');
+      entry.target.classList.add("appear");
       appearOnScroll.unobserve(entry.target);
     }
   });
 },
 appearOptions);
 
-faders.forEach(fader => {
+faders.forEach((fader) => {
   appearOnScroll.observe(fader);
 });
-
-
-
-

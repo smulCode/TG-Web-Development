@@ -5,7 +5,6 @@ html {
   box-sizing: border-box;
 }
 
-
 body {
   font-family: $font-stack;
   font-size: 16px;
@@ -40,6 +39,9 @@ section {
   margin-right: auto;
   width: 84.5vw;
 }
+.contact {
+  height: 50vh;
+}
 
 .cases {
   margin-bottom: 41.6vw;
@@ -72,13 +74,12 @@ section {
 //   margin-left:0.5rem;
 // }
 
-footer{
- 
+footer {
   height: 21vh;
 }
 
 .footer-container {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   flex-direction: column;
   margin-bottom: 42vw;
@@ -86,37 +87,33 @@ footer{
   margin-right: auto;
   width: 85vw;
   text-align: center;
-  
-  padding-top:2rem;
+
+  padding-top: 2rem;
 }
 
-.footer-contact-list{
-  display:flex;
+.footer-contact-list {
+  display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  border: 1px solid pink;
-  width: 55vw;
-  
-  
+
+  width: 57vw;
 }
-.footer-contact-container{
+.footer-contact-container {
   margin-bottom: 1rem;
 }
 
-.iconify{
+.iconify {
   color: $text-clr;
 }
 
-.footer-credits{
+.footer-credits {
   margin: 0 auto;
-
-  
 }
-p{
+.text {
   font-size: 3.73vw;
   letter-spacing: -0.01em;
   line-height: 132%;
   margin-bottom: 11.2vw;
   opacity: 0.85;
-  width: 82vw;
+  width: 81vw;
 }

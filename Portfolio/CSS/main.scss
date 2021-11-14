@@ -1,11 +1,9 @@
-
 @import "../assets/colors";
 @import "../assets/buttons";
 @import "../assets/navbar";
 @import "../assets/animation";
 @import "../assets/layout";
 @import "../assets/mediaqueries";
-
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800;900&display=swap");
 
@@ -18,8 +16,6 @@
   margin: 0;
   padding: 0;
 }
-
-
 
 .main {
   display: flex;
@@ -35,8 +31,6 @@
     position: center;
   }
 }
-
-
 
 .block-text {
   position: absolute;
@@ -60,7 +54,7 @@
 }
 
 .main-video {
-  display:none;
+  display: none;
   z-index: -2;
 
   //   position: fixed;
@@ -68,14 +62,12 @@
   //   bottom: 0;
   //   min-width: 100%;
   //   min-height: 100%;
-
-  
 }
 
 /// section
 
 // section {
- 
+
 //   // font-size: 3em;
 //   // scroll-snap-align: start;
 //   // text-align: center;
@@ -90,7 +82,6 @@
   height: 175vh;
   background-attachment: fixed;
   background-attachment: fixed;
-  
 }
 //
 
@@ -148,8 +139,6 @@
 //   height: 100vh;
 // }
 
-
-
 ////////////////////////////////
 
 .so-many-shadows {
@@ -170,7 +159,7 @@
 .card {
   height: 350px;
   width: 250px;
-  background: hsla(0, 0%, 97%, 0.25);
+  background: rgba(247, 247, 247, 0.25);
   backdrop-filter: blur(5px);
   border-radius: 13px;
   box-shadow: 0 3px 20px rgba(#111, 0.2);
@@ -200,40 +189,39 @@
   left: -18px;
   font-weight: bold;
 }
+.card-category {
+  margin-top: 0.5rem;
+}
 
 .card-link {
   color: white;
   background: transparent;
-  position: absolute;
-  bottom: 10px;
+
+  .iconify {
+    font-size: 1.5rem;
+    margin-bottom: -0.4rem;
+    margin-left: 0.1rem;
+  }
 }
+
+.card-link-options {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.6rem;
+  width: 13rem;
+  margin-left: 0.1rem;
+}
+
 /////cards end
 
-
-
-.showcase_1 {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  z-index: 9;
-  margin-bottom: 13.6vw;
-}
-
-.about-text{
+.about-text {
   display: flex;
-  width: 84.53vw;
+  width: 84.5vw;
   justify-content: space-between;
   flex-wrap: wrap;
 
   p {
-    color: $text-clr;
-    font-size: 3.73vw;
-    letter-spacing: -0.01em;
-    line-height: 132%;
-    margin-bottom: 11.2vw;
-    opacity: 0.85;
     padding-left: 7.73vw;
-    width: 81.06vw;
   }
 }
 .headline,
@@ -249,7 +237,6 @@
   padding-top: 13.6vw;
 }
 
-
 // slider text
 // @keyframes bannermove {
 //   0% {
@@ -260,26 +247,52 @@
 //   }
 // }
 .nav-logo.nav-scrolled {
-  
   text-shadow: 0 3px 20px rgba(#fff, 0.2);
-  text-shadow:
-   0.025em 0.025em 0 tomato,
-    0.05em 0.05em 0 blueviolet,
-  0.075em 0.075em 0 teal,
-   0.1em 0.1em 0 black;
-
- 
-  
+  text-shadow: 0.025em 0.025em 0 tomato, 0.05em 0.05em 0 blueviolet,
+    0.075em 0.075em 0 teal, 0.1em 0.1em 0 black;
 }
-.hamburger.nav-scrolled {
 
-  box-shadow: 
-  0 0 0 1px tomato, 
-  0 0 0 2px blueviolet,
-   0 0 0 3px teal,
-    0 0 0 4px black, 
-    0 0 0 5px #405378;
-  padding:0.4rem;
-  border-radius: 50%;
-  
+.bar.nav-scrolled {
+  background-color: tomato;
+}
+
+.about-pic {
+  margin: 1em;
+}
+
+.profile-pic {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+
+  border-radius: 3%;
+  box-shadow: 0 0 0 1px tomato, 0 0 0 2px blueviolet, 0 0 0 3px teal,
+    0 0 0 4px black, 0 0 0 5px #405378;
+
+  border-radius: 3%;
+}
+
+.profile-pic:hover {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.profile-pic-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  opacity: 1;
+  background: rgba(70, 92, 218, 0.25);
+  backdrop-filter: blur(1px);
+}
+
+.about-pic {
+  position: relative;
+}
+.about-pic:hover .profile-pic-overlay {
+  opacity: 0;
 }
