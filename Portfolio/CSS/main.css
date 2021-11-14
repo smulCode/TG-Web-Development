@@ -29,6 +29,10 @@
   font-weight: 600;
 }
 
+.contact-btn {
+  margin-left: 7.73vw;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -336,11 +340,13 @@ section {
   height: 100vh;
 }
 
-.section-about, .container-case, .contact {
+.section-about,
+.container-case,
+.contact {
   margin-bottom: 41.6vw;
   margin-left: auto;
   margin-right: auto;
-  width: 84.53vw;
+  width: 84.5vw;
 }
 
 .cases {
@@ -360,6 +366,47 @@ section {
   margin-right: 0.5rem;
   font-weight: 700;
   color: goldenrod;
+}
+
+footer {
+  background-color: thistle;
+  height: 30vh;
+}
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 42vw;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85vw;
+  text-align: center;
+}
+
+.footer-contact-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50vw;
+  margin: 0 auto;
+}
+
+i {
+  color: #111;
 }
 
 @media only screen and (min-width: 1080px) {
@@ -495,7 +542,7 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 200vh;
+  height: 175vh;
   background-attachment: fixed;
   background-attachment: fixed;
 }
@@ -594,10 +641,11 @@ section {
   margin-bottom: 11.2vw;
   opacity: 0.85;
   padding-left: 7.73vw;
-  width: 81.066vw;
+  width: 81.06vw;
 }
 
-.headline, .cases-headline {
+.headline,
+.cases-headline {
   font-size: 7.5vw;
   font-weight: 600;
   letter-spacing: -0.055em;
