@@ -27,9 +27,9 @@ header {
   width: 100%;
 }
 
-section {
-  height: 100vh;
-}
+// section {
+//   height: 100vh;
+// }
 
 .section-about,
 .container-case,
@@ -38,6 +38,12 @@ section {
   margin-left: auto;
   margin-right: auto;
   width: 84.5vw;
+}
+
+.section-about,
+.cases
+{
+  min-height: 100vh;
 }
 .contact {
   height: 50vh;
@@ -50,6 +56,8 @@ section {
 
 .section-headline {
   margin-bottom: 8.6vw;
+  font-size: 3.73vw; ;
+  
 }
 
 .section-headline::before {
@@ -58,6 +66,7 @@ section {
   counter-increment: section 1;
   content: "0" counter(section) ".";
   margin-right: 0.5rem;
+  margin-left: 1vw ;
   font-weight: 700;
   color: goldenrod;
 }
@@ -104,10 +113,12 @@ footer {
 
 .iconify {
   color: $text-clr;
+  font-size: 3.73vw;
 }
 
 .footer-credits {
   margin: 0 auto;
+  
 }
 .text {
   font-size: 3.73vw;

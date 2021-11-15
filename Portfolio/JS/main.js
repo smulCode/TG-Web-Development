@@ -22,8 +22,8 @@ function closeMenu() {
 
 //navbar scroll events
 
-// const header = document.querySelector("header");
-const header = document.querySelector(".bar");
+const header = document.querySelector("header");
+// const header = document.querySelector(".bar");
 const navLogo = document.querySelector(".nav-logo");
 const sectionOne = document.querySelector(".section-hero");
 
