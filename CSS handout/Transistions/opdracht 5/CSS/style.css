@@ -20,7 +20,6 @@
   height: 110px;
   width: 109px;
 }
-
 .box1 img {
   height: 100%;
   width: 100%;
@@ -43,7 +42,6 @@
   background: rgba(14, 219, 117, 0.5);
   width: 100%;
   height: 100%;
-  -webkit-transition: 3s ease-in;
   transition: 3s ease-in;
   opacity: 0;
   color: white;
@@ -61,14 +59,9 @@
   background-color: pink;
   top: 155px;
   left: 5px;
-  -webkit-transition: -webkit-transform 550ms ease-in;
-  transition: -webkit-transform 550ms ease-in;
   transition: transform 550ms ease-in;
-  transition: transform 550ms ease-in, -webkit-transform 550ms ease-in;
 }
 
 .box2:hover {
-  -webkit-transform: translate(70px, 60px) rotate(30deg);
-          transform: translate(70px, 60px) rotate(30deg);
-}
-/*# sourceMappingURL=style.css.map */
+  transform: translate(70px, 60px) rotate(30deg);
+}/*# sourceMappingURL=style.css.map */

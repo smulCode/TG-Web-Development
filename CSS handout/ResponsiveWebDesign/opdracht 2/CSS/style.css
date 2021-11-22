@@ -60,14 +60,9 @@ body {
 
 /* Gallery */
 .gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 20px;
 }
 
@@ -121,10 +116,8 @@ nav a {
     width: 270px;
   }
 }
-
 @media (min-width: 320px) and (max-width: 480px) {
   .gallery-item .thumbnail {
     width: 95%;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

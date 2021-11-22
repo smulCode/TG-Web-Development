@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS handout/CSS/main.css" />
+
+    <title>Variables, Datatypes & Operators</title>
+  </head>
+  <body>
+    <h1>opdracht 2</h1>
+
+    <h3>opdracht 2.2</h3>
+
+    <h4>A</h4>
+
+    <p>Substring blijft letters toevoegen vanaf de laagste index </p>
+    <h4>B</h4>
+
+    <p>Slice werkt dan niet </p>
+  
+    <h4>C</h4>
+
+    <p>substring() bij negatieve waardes worden index van 0 </p>
+
+    <h4>D</h4>
+
+    <p>slice() bij negatieve waardes word er geteld van achteraan de string </p>
+
+    <script>
+     let someKittens =
+        "De poes van de buurman heeft kittens gehad! Hij vraagt of wij nog kittens willen.";
+        console.log(someKittens);
+// a
+        console.log(someKittens.substring(13 ,1));
+    
+
+      
+
+// b
+console.log(someKittens.slice(13,1));
+        
+// c
+console.log(someKittens.substring(-5 ,3));
+
+// d
+console.log(someKittens.slice(-5,-3));
+
+
+    
+    </script>
+  </body>
+</html>

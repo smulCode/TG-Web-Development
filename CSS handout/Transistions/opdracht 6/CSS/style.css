@@ -3,21 +3,11 @@ li {
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .card {
@@ -28,17 +18,13 @@ li {
   border: 1px solid white;
   border-radius: 15px;
   font-family: "Times New Roman", Times, serif;
-  -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
-  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.68);
-          box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.68);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.68);
 }
-
 .card h4 {
   font-weight: normal;
   width: 100px;
 }
-
 .card p {
   width: 100px;
 }
@@ -72,10 +58,8 @@ li {
 .card:hover {
   color: black;
   z-index: 2;
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+  transform: translateY(-10px);
   margin-right: 13%;
   cursor: pointer;
   border: 10px double #111;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

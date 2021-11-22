@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -21,7 +20,6 @@ h3 {
 }
 
 .block {
-  display: -ms-grid;
   display: grid;
   place-content: center;
   width: 250px;
@@ -36,14 +34,12 @@ h3 {
   margin: 0 auto;
   line-height: 2rem;
 }
-
 .block-content .subheader {
   font-weight: bolder;
   font-size: 3.5em;
   letter-spacing: 8px;
   margin-bottom: 10px;
 }
-
 .block-content .subheader-2 {
   font-weight: bolder;
   font-size: 2.7em;
@@ -58,5 +54,4 @@ h3 {
   letter-spacing: 2px;
   font-family: Courier, monospace;
   font-weight: bold;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

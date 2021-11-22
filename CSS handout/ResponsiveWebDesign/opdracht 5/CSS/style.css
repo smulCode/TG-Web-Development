@@ -60,14 +60,9 @@ body {
 
 /* Gallery */
 .gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 20px;
 }
 
@@ -121,36 +116,30 @@ nav a {
     width: 270px;
   }
 }
-
 @media (min-width: 320px) and (max-width: 480px), (orientation: portrait) {
   .gallery-item .thumbnail {
     width: 95%;
   }
 }
-
 @media (resolution: 150dpi) {
   .logo {
     background: red;
   }
 }
-
 /* Minimum resolution */
 @media (-webkit-min-device-pixel-ratio: 0.75), (min-resolution: 72dpi) {
   .logo {
     background: green;
   }
 }
-
 /* Maximum resolution */
 @media (-webkit-max-device-pixel-ratio: 3.125), (max-resolution: 300dpi) {
   .logo {
     background: yellow;
   }
 }
-
 @media (min-width: 150px) and (max-width: 480px) {
   .page-description {
     font-size: 20px;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

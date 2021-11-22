@@ -66,13 +66,26 @@ li {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-input[type=file]::file-selector-button {
+input[type=file]::-webkit-file-upload-button {
   border: 2px solid #6c5ce7;
-  padding: .2em .4em;
-  border-radius: .2em;
+  padding: 0.2em 0.4em;
+  border-radius: 0.2em;
   background-color: #a29bfe;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+input[type=file]::file-selector-button {
+  border: 2px solid #6c5ce7;
+  padding: 0.2em 0.4em;
+  border-radius: 0.2em;
+  background-color: #a29bfe;
+  transition: 1s;
+}
+
+input[type=file]::-webkit-file-upload-button:hover {
+  background-color: #81ecec;
+  border: 2px solid #00cec9;
 }
 
 input[type=file]::file-selector-button:hover {
@@ -90,37 +103,26 @@ input[type=file]::file-selector-button:hover {
   color: red;
   font-size: 1.5em;
 }
-
-.box input::-webkit-input-placeholder {
+.box input::-moz-placeholder {
   color: #b53fcd;
   font-size: 1.3em;
   font-style: italic;
   padding: 1em;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
-
 .box input:-ms-input-placeholder {
   color: #b53fcd;
   font-size: 1.3em;
   font-style: italic;
   padding: 1em;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
-
-.box input::-ms-input-placeholder {
-  color: #b53fcd;
-  font-size: 1.3em;
-  font-style: italic;
-  padding: 1em;
-  font-family: 'Courier New', Courier, monospace;
-}
-
 .box input::placeholder {
   color: #b53fcd;
   font-size: 1.3em;
   font-style: italic;
   padding: 1em;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 ::slotted(span) {
@@ -140,5 +142,4 @@ input[type=file]::file-selector-button:hover {
 
 q {
   color: red;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

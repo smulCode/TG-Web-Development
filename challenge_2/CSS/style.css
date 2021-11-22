@@ -1,28 +1,20 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #000;
-  display: -ms-grid;
   display: grid;
   place-items: center;
 }
 
 .block {
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .bol {
@@ -35,8 +27,7 @@ body {
   -webkit-animation: bol 4s linear infinite;
           animation: bol 4s linear infinite;
   border-radius: 50%;
-  -webkit-box-shadow: 0 0 0 10px #ee6352,  0 0 0 20px #d45379, 0 0 0 30px #a4558f, 0 0 0 40px #6d588e,  0 0 0 50px #405378;
-          box-shadow: 0 0 0 10px #ee6352,  0 0 0 20px #d45379, 0 0 0 30px #a4558f, 0 0 0 40px #6d588e,  0 0 0 50px #405378;
+  box-shadow: 0 0 0 10px #ee6352, 0 0 0 20px #d45379, 0 0 0 30px #a4558f, 0 0 0 40px #6d588e, 0 0 0 50px #405378;
 }
 
 .bol:nth-child(2) {
@@ -86,31 +77,24 @@ body {
 
 @-webkit-keyframes bol {
   0% {
-    -webkit-transform: scale(0) rotate(-180deg);
-            transform: scale(0) rotate(-180deg);
+    transform: scale(0) rotate(-180deg);
   }
   50% {
-    -webkit-transform: scale(1.1) rotate(45deg);
-            transform: scale(1.1) rotate(45deg);
+    transform: scale(1.1) rotate(45deg);
   }
   100% {
-    -webkit-transform: scale(0) rotate(180deg);
-            transform: scale(0) rotate(180deg);
+    transform: scale(0) rotate(180deg);
   }
 }
 
 @keyframes bol {
   0% {
-    -webkit-transform: scale(0) rotate(-180deg);
-            transform: scale(0) rotate(-180deg);
+    transform: scale(0) rotate(-180deg);
   }
   50% {
-    -webkit-transform: scale(1.1) rotate(45deg);
-            transform: scale(1.1) rotate(45deg);
+    transform: scale(1.1) rotate(45deg);
   }
   100% {
-    -webkit-transform: scale(0) rotate(180deg);
-            transform: scale(0) rotate(180deg);
+    transform: scale(0) rotate(180deg);
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

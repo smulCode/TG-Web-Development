@@ -91,7 +91,6 @@
     left: 0px;
   }
 }
-
 @-webkit-keyframes move-round {
   0% {
     background-color: rgba(255, 0, 0, 0.507);
@@ -111,7 +110,6 @@
     left: 0px;
   }
 }
-
 @keyframes move-round {
   0% {
     background-color: rgba(255, 0, 0, 0.507);
@@ -131,7 +129,6 @@
     left: 0px;
   }
 }
-
 @-webkit-keyframes move-round-10 {
   0% {
     background-color: rgba(255, 0, 0, 0.507);
@@ -151,7 +148,6 @@
     left: 0px;
   }
 }
-
 @keyframes move-round-10 {
   0% {
     background-color: rgba(255, 0, 0, 0.507);
@@ -171,7 +167,6 @@
     left: 0px;
   }
 }
-
 @-webkit-keyframes move-swing {
   0% {
     background-color: red;
@@ -208,7 +203,6 @@
     left: 0px;
   }
 }
-
 @keyframes move-swing {
   0% {
     background-color: red;
@@ -244,5 +238,4 @@
     background-color: transparent;
     left: 0px;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

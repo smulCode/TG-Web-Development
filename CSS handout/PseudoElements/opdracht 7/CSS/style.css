@@ -6,8 +6,7 @@
   background-color: red;
   height: 100px;
   width: 100px;
-  -webkit-transform: rotate(30deg);
-          transform: rotate(30deg);
+  transform: rotate(30deg);
 }
 
 .block ::before {
@@ -16,8 +15,7 @@
   background-color: red;
   height: 100px;
   width: 100px;
-  -webkit-transform: rotate(20deg);
-          transform: rotate(20deg);
+  transform: rotate(20deg);
 }
 
 .block::after {
@@ -26,7 +24,5 @@
   background-color: red;
   height: 100px;
   width: 100px;
-  -webkit-transform: rotate(40deg);
-          transform: rotate(40deg);
-}
-/*# sourceMappingURL=style.css.map */
+  transform: rotate(40deg);
+}/*# sourceMappingURL=style.css.map */
