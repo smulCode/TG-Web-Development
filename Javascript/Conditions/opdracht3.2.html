@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS handout/CSS/main.css" />
+
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h1>opdracht 3</h1>
+
+    <h3>opdracht 3.2</h3>
+
+<p>B gebeurd niks onverwachts</p>
+
+   
+  
+    <script>
+//   A
+  let number = 20;
+
+  if (number == 3){
+      console.log('gelijk aan 3');
+  }else if (number > 4 && number < 11){
+      console.log('groter dan 4');
+  }else if (number > 11){
+      console.log('groter dan 11');
+  }else if  (number < 3){
+      console.log('kleiner dan 3');
+  }else {
+      console.log(' het getal is ' + number );
+  };
+
+//   const maanden = ["januari","februari","maart","april","mei","juni","juli","augustus","september","october","november","december"];
+
+//   console.log(maanden);
+
+//    let maandnummer = 2;
+//     let x = maanden[(maandnummer - 1)];
+
+//     console.log(x);
+
+   let monthNumber = 21;
+
+   if (monthNumber == 1){
+       console.log('januari');
+   }else if (monthNumber == 2){
+       console.log('februari');
+   }else if (monthNumber == 3){
+       console.log('maart');
+   }else if (monthNumber == 4){
+       console.log('april');
+   }else if (monthNumber == 5){
+       console.log('mei');
+   }else if (monthNumber == 6){
+       console.log('juni');
+   }else if (monthNumber == 7){
+       console.log('juli');
+   }else if (monthNumber == 8){
+       console.log('augustus');
+   }else if (monthNumber == 9){
+       console.log('september');
+   }
+   else if (monthNumber == 10){
+       console.log('october');
+   }else if (monthNumber == 11){
+       console.log('november');
+   }
+   else if (monthNumber == 12){
+       console.log('december');
+   }else {
+       console.log("Geen geldige maand!");
+   }
+    
+
+//    D
+
+   switch(monthNumber){
+       case 1:
+           console.log('januari');
+           break;
+    
+       case 2:
+           console.log('februari');
+           break;
+    
+       case 3:
+           console.log('maart');
+           break;
+    
+       case 4:
+           console.log('april');
+           break;
+    
+       case 5:
+           console.log('mei');
+           break;
+    
+       case 6:
+           console.log('juni');
+           break;
+    
+       case 7:
+           console.log('juli');
+           break;
+
+       case 8:
+           console.log('augustus');
+           break;
+       case 9:
+           console.log('september');
+           break;
+       case 10:
+           console.log('oktober');
+           break;
+       case 11:
+           console.log('november');
+           break;
+       case 12:
+           console.log('december');
+           break;
+           default:
+    console.log(`${monthNumber} Geen geldige maand!.`);
+   }
+
+// E
+
+
+
+let x = 3;
+let results = (x <= 4 && x >= 0) ? 2 : 5;
+console.log(results);
+
+
+    
+    </script>
+  </body>
+</html>

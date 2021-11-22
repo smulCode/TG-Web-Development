@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS handout/CSS/main.css" />
+
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h1>opdracht 4</h1>
+
+    <h3>opdracht 4.1</h3>
+
+<button type="button"  class="btn" onclick="hi();">Click me</button>
+<!-- <input type="text"  id="Fname" onkeyup="nameReader()">
+<input type="text"  id="Number" onkeyup="nameReader()">
+ -->
+
+<form class="text-form">
+    <input id="name" type="text" placeholder="Enter Name" />
+    <button type="submit"></button>
+</form>
+
+    <script>
+//   A
+ const hi = (click) =>{
+     console.log("Hello World");
+ }
+
+
+//  let personName = document.getElementById('Fname');
+//  let person = personName.value;
+
+//  console.log(person);
+// //  B
+// console.log(document.getElementById('Fname').value);
+// console.log(personName);
+
+// let nameReader = (personName) => {
+//     console.log(personName);
+// }
+
+// function nameReader(personName) {
+//     console.log(document.getElementById('Fname').value);
+    
+// }
+// C output cl same as typed in input
+
+let nameInput = document.getElementById('name');
+
+document.querySelector('form.text-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    
+    name =((nameInput.value) + 2);    
+  return  console.log(name);
+
+});
+
+// morgen na kijken
+
+
+    
+    </script>
+  </body>
+</html>
