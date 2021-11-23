@@ -13,55 +13,80 @@
 
     <h3>opdracht 4.1</h3>
 
-<button type="button"  class="btn" onclick="hi();">Click me</button>
-<!-- <input type="text"  id="Fname" onkeyup="nameReader()">
+    <button type="button" class="btn" onclick="hi();">Click me</button>
+    <!-- <input type="text"  id="Fname" onkeyup="nameReader()">
 <input type="text"  id="Number" onkeyup="nameReader()">
  -->
 
-<form class="text-form">
-    <input id="name" type="text" placeholder="Enter Name" />
-    <button type="submit"></button>
-</form>
+    <input type="checkbox" onchange="getChecked()" id='check1'>
+    <input type="text" id="text" placeholder="Enter text" onchange="getVal()">
+
 
     <script>
-//   A
- const hi = (click) =>{
-     console.log("Hello World");
- }
+
+function getChecked() {
+  const checkBox = document.getElementById('check1').checked;
+  if (checkBox === true) {
+    console.log(true);
+    } else {
+      console.log(false);
+  }
+}
 
 
-//  let personName = document.getElementById('Fname');
-//  let person = personName.value;
-
-//  console.log(person);
-// //  B
-// console.log(document.getElementById('Fname').value);
-// console.log(personName);
-
-// let nameReader = (personName) => {
-//     console.log(personName);
-// }
-
-// function nameReader(personName) {
-//     console.log(document.getElementById('Fname').value);
-    
-// }
-// C output cl same as typed in input
-
-let nameInput = document.getElementById('name');
-
-document.querySelector('form.text-form').addEventListener('submit', function (e) {
-    e.preventDefault();
-    
-    name =((nameInput.value) + 2);    
-  return  console.log(name);
-
-});
-
-// morgen na kijken
+      //   A
+      const hi = (click) => {
+        console.log("Hello World");
+      };
 
 
-    
+
+      //  let personName = document.getElementById('Fname');
+      //  let person = personName.value;
+
+      //  console.log(person);
+      // //  B
+      // console.log(document.getElementById('Fname').value);
+      // console.log(personName);
+
+      // let nameReader = (personName) => {
+      //     console.log(personName);
+      // }
+
+      // function nameReader(personName) {
+      //     console.log(document.getElementById('Fname').value);
+
+      // }
+      // C output cl same as typed in input
+
+
+ let val = document.getElementById('text').value;
+console.log(val);
+
+
+      function getVal() {
+  let val = document.getElementById('text').value;
+  console.log(`${val} is text value`);
+
+}
+
+// D
+
+let number = 12;
+
+let calculate = number => number * 2;
+console.log(calculate(number));
+
+
+
+
+
+
+let result = calculate(number);
+console.log("answer " + result);
+
+
     </script>
   </body>
 </html>
+

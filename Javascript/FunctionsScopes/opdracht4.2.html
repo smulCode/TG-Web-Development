@@ -8,23 +8,87 @@
 
     <title>JavaScript</title>
   </head>
+
+  
   <body>
     <h1>opdracht 4</h1>
 
     <h3>opdracht 4.2</h3>
 
     <h4>A</h4>
-    <div class="agent"></div>
+
+
+   <p> document.getElementsByClassName select element by classname</p>
+    <p>document.getElementsByTagName select element by tagname listname</p>
+    <p>document.querySelector return first element within document that matches the specified selector</p>
+    <p>document.querySelectorAll selects all elements thats matches the specified selector</p>
+    <p>element.innerHTML you can change html element with it</p>
+    <p>element.innerText  The innerText property sets or returns the text content of the specified node</p>
+
+    <h4>B</h4>
+
+    <input type="text" id="myInput" oninput="textReader()">
+
+      <p id="output-text"></p>
+
+    <!-- //make examples -->
+    
+    <!-- <p class="agent1"></p>
+    
+    <ul>
+      <li>wop</li>
+      <li>wap</li>
+      <li>wop</li>
+    </ul>
+
+    <button onclick="colorChange()">Try it</button>
+
+    <div class="agent3">Agent3</div>
+    <button onclick="colorChange()">Try it</button>
+    <button onclick="listLength()">listLength</button>
+
+    <div class="agent4">Agent4</div>
+
+    <p id="demo"></p> -->
+
+
 
     <script>
+     
       //   A
 
-      let agent1 = document.getElementsByClassName(".agent1");
-      let agent2 = document.getElementsByTagName(".agent2");
-      let agent3 = document.querySelector("agent3");
-      let agent4 = document.querySelectorAll("agent4");
-      let agent5 = element.innerHTML("agent5");
-      let agent6 = element.innerText("agent6");
+//       const agent1 = document.getElementsByClassName(".agent1");
+//       const listTag = document.getElementsByTagName("LI");
+//       const agent3 = document.querySelector("agent3");
+//       const agent4 = document.querySelectorAll("agent4");
+//       // const agent5 = element.innerHTML("agent5");
+//       // const agent6 = element.innerText("text-output");
+
+
+    
+//       function listLength() {
+//   let x = document.getElementsByTagName("LI");
+//   document.getElementsByClassName(".agent1").innerHTML = x.length;
+// }
+
+//       function colorChange() {
+//   document.querySelector(".agent3").style.backgroundColor = "red";
+  
+//   }
+
+//   function myFunction() {
+//   var x = document.getElementsByTagName("LI");
+//   document.getElementById("demo").innerHTML = x.length;
+// }
+
+
+// B
+function textReader() {
+  const x = document.getElementById("myInput").value;
+  document.getElementById("output-text").innerHTML = "You wrote: " + x;
+}
+
+ 
     </script>
   </body>
 </html>
