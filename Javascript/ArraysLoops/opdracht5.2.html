@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS handout/CSS/main.css" />
+
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h1>opdracht 5</h1>
+
+    <h3>opdracht 5.2</h3>
+
+    <h4>A</h4>
+
+   
+
+    <script>
+        'use strict'
+// A
+const dutchSports = ['Voetbal', "Hockey", "Schaatsen"];
+
+// a
+
+dutchSports.forEach(sport => console.log(sport));
+
+for (const sport of dutchSports) {
+  console.log(sport);
+}
+
+ let sport = "";
+ 
+    
+        for (let i = 0; i < dutchSports.length; i++) {
+            sport += dutchSports[i] + " "
+            console.log(dutchSports[i]);
+        }
+
+        console.log(sport);
+let numberArray = "";
+let number = 20;
+        for (let i = 0; i < number; i++) {
+          numberArray += number[i] ;
+            console.log(number[i]);
+        }
+console.log(numberArray);
+
+
+for (let i = 0; i < 21; i++){
+    if (i === 0 ){
+        console.log(i + " is even");
+    }else if (i % 2 === 0 ){
+        console.log(i + " is even");
+    }else {
+        console.log(i + " is odd");
+    }
+}
+
+// def
+
+for (let i = 1; i < 11; i++){
+    console.log(i);{
+    for (let j = 2; j < 21; j+=2){
+        console.log(j);}{
+        for (let k = 3; k < 31; k+=3){
+            console.log(k);
+        }
+    }
+}
+}
+
+//g
+
+let fibArray = [];
+fibArray[0] = 0; 
+fibArray[1] = 1; 
+
+for (let i = 2; i <= 10 ; i++){
+    fibArray[i] = fibArray[i -2] + fibArray[i - 1];
+    console.log(fibArray[i]); 
+
+}
+// h
+// let randomNumberArray = [2,7,5,10,4,9,3,1,8,6];
+
+function bubbleSort(arr){
+    
+    let i, j;
+    let len = arr.length;
+      
+    let isSwapped = false;
+      
+    for(i =0; i < len; i++){
+        
+      isSwapped = false;
+        
+      for(j = 0; j < len; j++){
+          if(arr[j] > arr[j + 1]){
+            let temp = arr[j]
+            arr[j] = arr[j+1];
+            arr[j+1] = temp;
+            isSwapped = true;
+          }
+      }
+        
+        
+      if(!isSwapped){
+        break;
+      }
+    }
+      
+  
+    console.log(arr)
+  }
+    
+
+  let arr = [2,7,5,10,4,9,3,1,8,6];
+    
+
+  bubbleSort(arr)
+    </script>
+  </body>
+</html>
+

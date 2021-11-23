@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS handout/CSS/main.css" />
+
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h1>opdracht 5</h1>
+
+    <h3>opdracht 5.3</h3>
+
+    <h4>A</h4>
+
+    <script>
+      "use strict";
+      // A
+      const dutchSports = ["Voetbal", "Hockey", "Schaatsen"];
+
+      dutchSports.push("Zeilen", "Zwemmen");
+      console.log(dutchSports);
+
+      // B
+
+      dutchSports.unshift("Volleybal");
+      console.log(dutchSports);
+
+      // c
+
+      const ballSports = dutchSports.slice(0, 3);
+      console.log(ballSports);
+
+      // d
+      dutchSports.splice(0, 3);
+      console.log(dutchSports);
+
+      // e
+      dutchSports.sort();
+      console.log(dutchSports);
+
+      // f
+
+      dutchSports.forEach(function (item, index, array) {
+        console.log(item);
+      });
+
+      // G
+
+      let sportsLength = dutchSports.length;
+
+      console.log(sportsLength);
+    </script>
+  </body>
+</html>
