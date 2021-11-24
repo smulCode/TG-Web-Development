@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS handout/CSS/main.css" />
+
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h1>opdracht 5</h1>
+
+    <h3>opdracht 5.4</h3>
+
+    <h4>A</h4>
+
+    <script>
+      "use strict";
+
+      const newArray = Array.from("john");
+      console.log(newArray);
+
+      const words = ["Hello", "World", "Cheese", "Present", "Good"];
+      const filterWords = words.filter((words) => words.length > 5);
+      console.log(filterWords);
+
+      const findWords = words.find((words) => words.length > 5);
+      console.log(findWords);
+
+      const numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+      const even = (number) => number % 2 === 0;
+
+      console.log(numberArray.some(even));
+
+      const numberUnderFive = (number) => number < 5;
+
+      console.log(numberArray.every(numberUnderFive));
+      console.log(numberArray.includes(6));
+      console.log(numberArray.includes(15));
+
+
+    </script>
+  </body>
+</html>

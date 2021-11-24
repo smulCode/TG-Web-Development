@@ -49,9 +49,13 @@
 
       // G
 
-      let sportsLength = dutchSports.length;
+      let sportsLength = [...dutchSports];
 
-      console.log(sportsLength);
+      sportsLength.forEach(function (sport) {
+        console.log(sport.length);
+   
+      });
+      // console.log(sportsLength);
     </script>
   </body>
 </html>
