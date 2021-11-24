@@ -14,11 +14,86 @@
     <h3>opdracht 6.1</h3>
 
     <h4>A</h4>
-
+    <p>Jaa prototype</p>
     <script>
       "use strict";
+      let pet = new Object();
 
-     
+      pet.name = "Nala";
+      pet.age = "2";
+      pet.species = "Cat";
+      pet.country = "Netherlands";
+      pet.city = "Rotterdam";
+
+      console.log(pet.name);
+      console.log(pet.age);
+      console.log(pet.species);
+      console.log(pet.city);
+      console.log(pet.country);
+      console.log(pet);
+
+      const nala = Object.create(pet);
+      console.log(nala.age);
+
+      const Nala = {
+        name: "Nala",
+        species: "Cat",
+        age: "2",
+        country: "Netherlands",
+        city: "Rotterdam",
+      };
+
+      const Jack = {
+        name: "Nala",
+        species: "Dog",
+        age: "1",
+        country: "Netherlands",
+        city: "Amsterdam",
+      };
+
+      const Dog = Object.create(Jack);
+      console.log(Dog.age);
+      console.log(Dog);
+
+    //   const Person = {
+    //     name: 'mark',
+    //     age: "21",
+    //     country: "Netherlands",
+    //     city: "Amsterdam",
+
+
+    //   }
+
+    
+
+      const Person = function (firstName, birthYear){
+            this.firstName = firstName;
+            this.birthYear = birthYear;
+
+      }
+
+      const John = new Person('John', 1991)
+      const jan = new Person('jan', 1993)
+      const Berta = new Person('Berta', 1971)
+      const kim = new Person('kim', 1981)
+      const kris = new Person('kris', 1996)
+    
+      console.log(jan);
+      console.log(John);
+  
+      const personArray = [John,jan,Berta,kim,kris]
+      console.log(personArray[0].firstName);
+
+      const sortYear = function (){
+        
+      }
+
+      
+    //  const sortDate = John.birthYear;
+
+    //   console.log(sortDate);
+
+
 
 
     </script>
