@@ -66,33 +66,61 @@
 
     
 
-      const Person = function (firstName, birthYear){
-            this.firstName = firstName;
-            this.birthYear = birthYear;
+      // const Person = function (firstName, birthYear){
+      //       this.firstName = firstName;
+      //       this.birthYear = birthYear;
 
-      }
+      // }
 
-      const John = new Person('John', 1991)
-      const jan = new Person('jan', 1993)
-      const Berta = new Person('Berta', 1971)
-      const kim = new Person('kim', 1981)
-      const kris = new Person('kris', 1996)
+      // const John = new Person('John', 1991)
+      // const jan = new Person('jan', 1993)
+      // const Berta = new Person('Berta', 1971)
+      // const kim = new Person('kim', 1981)
+      // const kris = new Person('kris', 1996)
     
-      console.log(jan);
-      console.log(John);
+      // console.log(jan);
+      // console.log(John);
   
-      const personArray = [John,jan,Berta,kim,kris]
-      console.log(personArray[0].firstName);
+      // const personArray = [John,jan,Berta,kim,kris]
+      // console.log(personArray[0].firstName);
 
-      const sortYear = function (){
+      // const sortYear = function (){
         
-      }
+      // }
 
       
     //  const sortDate = John.birthYear;
 
     //   console.log(sortDate);
 
+
+    const Persons = [
+      { name: 'John', age:15},
+      { name: 'Pete', age:20},
+      { name: 'kate', age:25},
+      { name: 'liz', age:12},
+      { name: 'mark', age:22}
+
+    ] ;
+
+    // const foundPerson = Persons.find(person) => {
+    //   return person.
+    // }
+   
+
+    const filteredPersons = Persons.filter((person) => {
+      return person.age <= 20
+    })
+
+    const agePersons = Persons.map((person) => {
+      return person.age
+    })
+
+    console.log(filteredPersons);
+    console.log(agePersons);
+
+    agePersons.sort();
+    console.log(agePersons);    
 
 
 

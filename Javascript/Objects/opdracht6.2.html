@@ -18,13 +18,27 @@
     <script>
       "use strict";
 
-      const club = {
-        name: ["bob", "flop", "top"],
-        type: ["chess", "Soccer", "IT"],
-        Members: [10, 50, 20],
-      };
 
-      const
+
+      const club = [
+      { name:"bob", type: "chess", members:30},
+      { name: "flop", type: "Soccer", members:50},
+      { name: "top", type: "IT", members:20},
+
+    ] ;
+
+  
+    // console.log(club);
+    // club[0].occupation = "designer";
+    console.log(club);
+
+      const contactInfo = [
+        { address: "street1", phoneNumber: "123456789", contactPerson:'mark'}
+       
+      ]
+
+      club[0].contactinfo = contactInfo[0];
+      console.log(club);
  
     </script>
   </body>
