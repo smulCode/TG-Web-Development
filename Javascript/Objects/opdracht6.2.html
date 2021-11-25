@@ -29,7 +29,7 @@
 
     // c
 
-  
+
     // // console.log(club);
     // // club[0].occupation = "designer";
     // console.log(club);
@@ -38,13 +38,13 @@
     //     { address: "street1", phoneNumber: "123456789", contactPerson:'mark'},
     //     { address: "street2", phoneNumber: "434567893", contactPerson:'liz'},
     //     { address: "street3", phoneNumber: "534567893", contactPerson:'kate'}
-       
+
     //   ]
 
     //   // club[0].contactinfo = contactInfo[0];
     //   // console.log(club);
     //   // console.log(club.length);
- 
+
     //   for(let i = 0; i < club.length; i++){
     //     club[i].contactinfo = contactInfo[i];
     //   }
@@ -66,8 +66,11 @@
       const DE = new club('DE', "Hockey",70)
       const ES = new club('ES', 'Dance',20)
 
-  
+
       console.log(AX);
+      const clubArray = [AX, BQ, CA, DE, ES];
+
+      // console.log(clubArray);
 
       const contactInfo = function (Address,PhoneNumber,ContactPerson){
             this.Address = Address;
@@ -76,27 +79,67 @@
 
       }
 
-      const AXcontactInfo = new contactInfo('street1', 12345456,'Mark') 
+      const AXcontactInfo = new contactInfo('street1', 12345456,'Mark')
+      const BQcontactInfo = new contactInfo('street2', 22345456,'Liz')
+      const CAcontactInfo = new contactInfo('street3', 32345456,'Kate')
+      const DEcontactInfo = new contactInfo('street4', 42345456,'Peter')
+      const EScontactInfo = new contactInfo('street5', 52345456,'John')
 
       console.log(AXcontactInfo);
-      
-
-      
-       const mergeInfo = Object.assign(AX,AXcontactInfo)
-       console.log(mergeInfo);
 
 
+      const infoArray = [AXcontactInfo, BQcontactInfo, CAcontactInfo, DEcontactInfo, EScontactInfo];
 
-      //  const mergeObjects = (a,b) => {
-      //   for(let i = 0; i < array.length; i++){
-      //     Object.assign(a[i],b[i])
-      //  }
-      // }
-      
-        
+      // console.log(infoArray);
 
 
-      
+       const arrayLength = infoArray.length;
+       console.log(arrayLength);
+
+      //  const checkArrayLength = infoArray.length === clubArray.length;
+      //  console.log(checkArrayLength);
+
+
+       
+
+      //  const mergeInfo = Object.assign(AX,AXcontactInfo);
+      //  console.log(mergeInfo);
+      //  const mergeInfo = Object.assign(clubArray[0],infoArray[0]);
+      //  console.log(mergeInfo);
+
+
+      // infoArray.forEach(info => console.log(info));
+      // clubArray.forEach(club => console.log(club));
+
+      // for (const club of  clubArray)  console.log(club);
+      // for (const info of  infoArray) console.log(info);
+
+      //  const mergeInfo = Object.assign(club[0],cont);
+      //  console.log(mergeInfo);
+
+      // for (const club of  clubArray.entries()) {console.log(club)};
+      // for (const info of  infoArray.entries()) {console.log(info)};
+
+      const AllClubInfo = [];
+
+
+       const mergeObjects = () => {
+        for (let i = 0; i < arrayLength; i++){
+         let mergedInfo = Object.assign(clubArray[i],infoArray[i])
+          // console.log(mergedInfo);
+         AllClubInfo.push(mergedInfo);
+         //push to empty array
+       }}
+
+mergeObjects();
+     
+
+
+console.log(AllClubInfo);
+
+for (const info of  AllClubInfo) console.log(info);;
+
+
 
     </script>
   </body>
