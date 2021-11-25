@@ -20,26 +20,84 @@
 
 
 
-      const club = [
-      { name:"bob", type: "chess", members:30},
-      { name: "flop", type: "Soccer", members:50},
-      { name: "top", type: "IT", members:20},
+    //   const club = [
+    //   { name:"bob", typeOfclub: "chess", members:30},
+    //   { name: "flop", typeOfclub: "Soccer", members:50},
+    //   { name: "top", typeOfclub: "IT", members:20},
 
-    ] ;
+    // ] ;
+
+    // c
 
   
+    // // console.log(club);
+    // // club[0].occupation = "designer";
     // console.log(club);
-    // club[0].occupation = "designer";
-    console.log(club);
 
-      const contactInfo = [
-        { address: "street1", phoneNumber: "123456789", contactPerson:'mark'}
+    //   const contactInfo = [
+    //     { address: "street1", phoneNumber: "123456789", contactPerson:'mark'},
+    //     { address: "street2", phoneNumber: "434567893", contactPerson:'liz'},
+    //     { address: "street3", phoneNumber: "534567893", contactPerson:'kate'}
        
-      ]
+    //   ]
 
-      club[0].contactinfo = contactInfo[0];
-      console.log(club);
+    //   // club[0].contactinfo = contactInfo[0];
+    //   // console.log(club);
+    //   // console.log(club.length);
  
+    //   for(let i = 0; i < club.length; i++){
+    //     club[i].contactinfo = contactInfo[i];
+    //   }
+    //   console.log(club);
+
+
+
+
+      const club = function (name,typeOfClub,members){
+            this.name = name;
+            this.typeOfClub = typeOfClub;
+            this.members = members;
+
+      }
+
+      const AX = new club('AX', 'Chess',30)
+      const BQ = new club('BQ', 'Soccer',40)
+      const CA = new club('CA', 'Football',100)
+      const DE = new club('DE', "Hockey",70)
+      const ES = new club('ES', 'Dance',20)
+
+  
+      console.log(AX);
+
+      const contactInfo = function (Address,PhoneNumber,ContactPerson){
+            this.Address = Address;
+            this.PhoneNumber = PhoneNumber;
+            this.ContactPerson = ContactPerson;
+
+      }
+
+      const AXcontactInfo = new contactInfo('street1', 12345456,'Mark') 
+
+      console.log(AXcontactInfo);
+      
+
+      
+       const mergeInfo = Object.assign(AX,AXcontactInfo)
+       console.log(mergeInfo);
+
+
+
+      //  const mergeObjects = (a,b) => {
+      //   for(let i = 0; i < array.length; i++){
+      //     Object.assign(a[i],b[i])
+      //  }
+      // }
+      
+        
+
+
+      
+
     </script>
   </body>
 </html>
