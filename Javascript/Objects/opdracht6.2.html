@@ -135,10 +135,21 @@ mergeObjects();
      
 
 
-console.log(AllClubInfo);
+// console.log(AllClubInfo);
 
-for (const info of  AllClubInfo) console.log(info);;
+// for (const info of  AllClubInfo) console.log(info);
 
+
+// 
+for (let i = 0; i < AllClubInfo.length; i++){
+Object.keys(AllClubInfo[i]).forEach(key => {
+    let value = AllClubInfo[i][key];
+
+     console.log(`${key}: ${value}`);
+    
+})}
+// let string = JSON.parse(JSON.stringify(AllClubInfo));
+// console.log(string);
 
 
     </script>
