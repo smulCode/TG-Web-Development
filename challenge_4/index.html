@@ -9,21 +9,23 @@
 
     <title>Challenge 4</title>
   </head>
-  
+
   <body>
     <header>
       <h1>Challenge 4</h1>
       <h3>Bianca & Wesley</h3>
     </header>
 
+    <h4>Calculate the difference in days</h4>
+
     <div class="container">
-      <form action="" method="get">
-        <input type="date" class="first-date" />
-        <input type="date" class="second-date" /><br />
-
-        <button type="submit" onclick="getInputValue();">click</button>
-
-        <div id="show-date"></div>
+      <form action="">
+        <input type="date" class="first-date" value="" />
+        <input type="date" class="second-date" value="" /><br />
+        <div class="show-days" id="show-date"></div>
+        <button class="btn-submit" type="button" value="click">
+          Calculate
+        </button>
       </form>
     </div>
 
