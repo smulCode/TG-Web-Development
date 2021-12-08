@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #1e1e1e;
+  background-color: #fff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+
+header {
+  display: grid;
+  place-content: center;
+  font-size: 2em;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  margin: 4em auto;
+}
+
+.btn-submit {
+  font-size: 2rem;
+  cursor: pointer;
+  display: flex;
+  padding: 1em 2em;
+  margin: 1em auto;
+  color: #dedede;
+  text-decoration: none;
+  font-weight: bolder;
+  text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #a1a1a1;
+  box-shadow: 2px 2px 0.5em rgba(155, 155, 155, 0.55), inset 1px 1px 0 rgba(255, 255, 255, 0.9), inset -1px -1px 0 rgba(0, 0, 0, 0.21);
+  border: 1px solid #cacaca;
+  background: linear-gradient(#ffffff, #e3e3e3);
+  transition: all 0.5s ease-in-out;
+}
+.btn-submit:hover {
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.45);
+  border: 1px solid #565656;
+  box-shadow: 2px 2px 0.5em rgba(0, 0, 0, 0.55), inset 1px 1px 0 rgba(255, 255, 255, 0.55), inset -1px -1px 0 rgba(0, 0, 0, 0.5);
+  background: -webkit-repeating-linear-gradient(top, #565656, #131313 2px, #565656 1px);
+}
+
+.show-days {
+  font-size: 4em;
+  font-weight: bold;
+  margin: 0.2em;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.45);
+}
+
+h4 {
+  display: flex;
+  justify-content: center;
+  margin: 3em auto;
+}
+
+.first-date,
+.second-date {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #dedede;
+  text-decoration: none;
+  font-weight: bolder;
+  text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #a1a1a1;
+  box-shadow: 2px 2px 0.5em rgba(155, 155, 155, 0.55), inset 1px 1px 0 rgba(255, 255, 255, 0.9), inset -1px -1px 0 rgba(0, 0, 0, 0.21);
+  border: 1px solid #cacaca;
+  background: linear-gradient(#ffffff, #e3e3e3);
+  transition: all 0.5s ease-in-out;
+}
+.first-date:hover,
+.second-date:hover {
+  color: #1e1e1e;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.45);
+  border: 1px solid #565656;
+  box-shadow: 2px 2px 0.5em rgba(0, 0, 0, 0.55), inset 1px 1px 0 rgba(255, 255, 255, 0.55), inset -1px -1px 0 rgba(0, 0, 0, 0.5);
+}/*# sourceMappingURL=style.css.map */
