@@ -34,9 +34,8 @@ function createCatModal() {
   closeButton.addEventListener("click", removeModal);
 
   function removeModal() {
-    while (catModal.firstChild) {
-      catModal.removeChild(catModal.lastChild);
-      catModal.classList.remove("cat-modal");
+    while (modalContainer.firstChild) {
+      modalContainer.removeChild(modalContainer.lastChild);
     }
     console.log("click remove");
   }
