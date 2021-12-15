@@ -1,48 +1,94 @@
-window.num2str = function (num) {
-    return window.num2str.convert(num);
+function update(){
+   let bigNumArry = new Array('', ' duizend', ' miljoen', ' biljoen',);
+
+   let output = '';
+   let numString =   document.getElementById('number').value;
+   let finlOutPut = new Array();
+
+    if (numString == '0') {
+        document.getElementById('container').innerHTML = 'Nul';
+        return;
+    }
+
+    if (numString == 0) {
+        document.getElementById('container').innerHTML = 'type nummers';
+        return;
+    }
+
+   let i = numString.length;
+    i = i - 1;
+
+    //cut the number to groups of three digits and add them to the Arry
+    while (numString.length > 3) {
+       let triDig = new Array(3);
+        triDig[2] = numString.charAt(numString.length - 1);
+        triDig[1] = numString.charAt(numString.length - 2);
+        triDig[0] = numString.charAt(numString.length - 3);
+
+       let varToAdd = triDig[0] + triDig[1] + triDig[2];
+        finlOutPut.push(varToAdd);
+        i--;
+        numString = numString.substring(0, numString.length - 3);
+    }
+    finlOutPut.push(numString);
+    finlOutPut.reverse();
+
+    //convert each group of three digits to dutch word
+    //if all digits are zero the triConvert
+    //function return the string "dontAddBigSufix"
+    for (j = 0; j < finlOutPut.length; j++) {
+        finlOutPut[j] = triConvert(parseInt(finlOutPut[j]));
+    }
+
+    var bigScalCntr = 0; //this int mark the million billion trillion... Arry
+
+    for (b = finlOutPut.length - 1; b >= 0; b--) {
+        if (finlOutPut[b] != "dontAddBigSufix") {
+            finlOutPut[b] = finlOutPut[b] + bigNumArry[bigScalCntr] + ' , ';
+            bigScalCntr++;
+        }
+        else {
+            //replace the string at finlOP[b] from "dontAddBigSufix" to empty String.
+            finlOutPut[b] = ' ';
+            bigScalCntr++; //advance the counter  
+        }
+    }
+
+        //convert The output Arry to , more printable string 
+        for(n = 0; n<finlOutPut.length; n++){
+            output +=finlOutPut[n];
+        }
+
+    document.getElementById('container').innerHTML = output;//print the output
 }
 
-window.num2str.ones=['','one','two','three','four','five','six','seven','eight','nine'];
-window.num2str.tens=['','','twenty','thirty','forty','fifty','sixty','seventy','eighty','ninety'];
-window.num2str.teens=['ten','eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen'];
+//simple function to convert from numbers to words from 1 to 999
+function triConvert(num){
+    var ones = new Array('', ' een', ' twee', ' drie', ' vier', 'vijf', 'zes', ' zeven', ' acht', ' negen', ' tien', ' elf', ' twaalf', ' dertien', ' veertien', ' vijftien', ' zestien', ' zeventien', ' achttien', ' negentien');
+    var tens = new Array('', '', ' twintig', ' dertig', ' veertig', ' vijftig', ' zestig', ' zeventig', ' tachtig', ' negentig');
+    var hundred = ' honderd';
+    var output = '';
+    var numString = num.toString();
 
+    if (num == 0) {
+        return 'dontAddBigSufix';
+    }
+    //the case of 10, 11, 12 ,13, .... 19 
+    if (num < 20) {
+        output = ones[num];
+        return output;
+    }
 
-window.num2str.convert_millions = function(num) {
-    if (num >= 1000000) {
-        return this.convert_millions(Math.floor(num / 1000000)) + " million " + this.convert_thousands(num % 1000000);
+    //100 and more
+    if (numString.length == 3) {
+         output = ones[parseInt(numString.charAt(0))] + hundred;
+        output += ones[parseInt(numString.charAt(2))] + "en";
+        output += tens[parseInt(numString.charAt(1))];
+        return output;
     }
-    else {
-        return this.convert_thousands(num);
-    }
-}
 
-window.num2str.convert_thousands = function(num) {
-    if (num >= 1000) {
-        return this.convert_hundreds(Math.floor(num / 1000)) + " thousand " + this.convert_hundreds(num % 1000);
-    }
-    else {
-        return this.convert_hundreds(num);
-    }
-}
+    output += tens[parseInt(numString.charAt(0))];
+    output += ones[parseInt(numString.charAt(1))];
 
-window.num2str.convert_hundreds = function(num) {
-    if (num > 99) {
-        return this.ones[Math.floor(num / 100)] + " hundred " + this.convert_tens(num % 100);
-    }
-    else {
-        return this.convert_tens(num);
-    }
-}
-
-window.num2str.convert_tens = function(num) {
-    if (num < 10) return this.ones[num];
-    else if (num >= 10 && num < 20) return this.teens[num - 10];
-    else {
-        return this.tens[Math.floor(num / 10)] + " " + this.ones[num % 10];
-    }
-}
-
-window.num2str.convert = function(num) {
-    if (num == 0) return "zero";
-    else return this.convert_millions(num);
-}
+    return output;
+}   
