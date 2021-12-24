@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+    font-size:3em
+}
+h4{
+    text-align: center;
+    font-size:2em
+}
+
+.main{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+
+
+.container-form {
+    margin: 1em;
+    background: linear-gradient(28deg, #2bc693 30%, #28ea63 100%);
+    border-radius:10px;
+}
+
+.form{
+    // display:flex;
+    // flex-direction:column;
+
+    display:grid;
+    place-content: center;
+    grid-template-columns: 1fr;
+    padding: 1em 2em;
+
+    input{
+        border-radius: 3px;
+    }
+
+
+}
